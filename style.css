@@ -376,7 +376,7 @@ code.ic {
 
     .page-top-header,
     .page-foot {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         gap: 0.25rem;
     }
