@@ -1,455 +1,463 @@
 /* ==========================================================================
-   FILE: css/style.css (FIXED A4 PRINT & FOOTER ALIGNMENT)
+   FILE: css/style.css
+   BOOK: React.js (Pure Standard CSS - NO TAILWIND CSS)
+   AUTHOR: រៀបចំដោយ៖ លាត ប្រុស
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary: #0284C7;
-    --primary-dark: #0369A1;
-    --primary-light: #E0F2FE;
-    --primary-border: #BAE6FD;
-    --secondary: #0F172A;
-    --bg: #F1F5F9;
-    --surface: #FFFFFF;
-    --text: #334155;
-    --muted: #64748B;
-    --border: #E2E8F0;
-    --code-bg: #0F172A;
-    --font-sans: 'Inter', 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
+  --primary: #0284C7;
+  --primary-dark: #0369A1;
+  --primary-light: #E0F2FE;
+  --secondary: #0F172A;
+  --bg: #F1F5F9;
+  --surface: #FFFFFF;
+  --text: #334155;
+  --muted: #64748B;
+  --border: #E2E8F0;
+  --code-bg: #0F172A;
+  --summary-bg: #F8FAFC;
+  --font-sans: 'Inter', 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-sans);
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 .book-container {
-    max-width: 920px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+  max-width: 920px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 /* ==========================================================================
-   STANDARD A4 PAGE SHEET
+   A4 PAGE SHEET (FLEXBOX WITH STICKY FOOTER)
    ========================================================================== */
 .page {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: 0 4px 24px -2px rgba(15, 23, 42, 0.08);
-    padding: 2.5rem 3.25rem;
-    margin-bottom: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 265mm;
-    box-sizing: border-box;
-    position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px -2px rgba(15, 23, 42, 0.08);
+  padding: 2.35rem 3.25rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 265mm;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .page-body {
-    width: 100%;
-    flex: 1 0 auto;
+  width: 100%;
+  flex: 1 0 auto;
 }
 
 /* ==========================================================================
-   COVER PAGE & THANK YOU PAGE (100% MIDDLE & CENTER WITHOUT BREAKING FOOTER)
+   COVER PAGE & THANK YOU PAGE (100% MIDDLE & CENTER)
    ========================================================================== */
 .cover-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .thankyou-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    /* ការពារកុំឱ្យ Footer រួមតូច */
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
 }
 
 .cover-center-box {
-    max-width: 640px;
-    width: 100%;
-    margin: auto;
-    /* រុញប្រអប់អក្សរឱ្យនៅចំកណ្តាលទំព័រទាំងទទឹងនិងបណ្តោយ */
+  max-width: 640px;
+  width: 100%;
+  margin: auto;
 }
 
 .cover-badge-pill {
-    display: inline-block;
-    background: #E0F2FE;
-    color: var(--primary);
-    padding: 0.45rem 1.35rem;
-    border-radius: 999px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+  display: inline-block;
+  background: #E0F2FE;
+  color: var(--primary);
+  padding: 0.45rem 1.35rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .cover-main-title {
-    font-size: 2.75rem;
-    font-weight: 800;
-    color: var(--secondary);
-    line-height: 1.3;
-    margin-bottom: 1rem;
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--secondary);
+  line-height: 1.3;
+  margin-bottom: 1rem;
 }
 
 .cover-subtitle {
-    font-size: 1.05rem;
-    color: var(--muted);
-    margin-bottom: 1.75rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 1.75rem;
 }
 
 .cover-line {
-    width: 56px;
-    height: 4px;
-    background: var(--primary);
-    margin: 0 auto 1.75rem;
-    border-radius: 99px;
+  width: 56px;
+  height: 4px;
+  background: var(--primary);
+  margin: 0 auto 1.75rem;
+  border-radius: 99px;
 }
 
 .cover-meta {
-    font-size: 0.95rem;
-    color: var(--text);
-    line-height: 1.9;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.9;
 }
 
 .cover-meta strong {
-    color: var(--secondary);
-    font-weight: 700;
+  color: var(--secondary);
+  font-weight: 700;
 }
 
 .cover-meta a {
-    color: #6D28D9;
-    text-decoration: underline;
-    font-weight: 500;
+  color: #6D28D9;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 /* ==========================================================================
-   RUNNING HEADER & RUNNING FOOTER (FULL 100% WIDTH)
+   RUNNING HEADER & RUNNING FOOTER
    ========================================================================== */
 .page-top-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 0.65rem;
-    margin-bottom: 1.25rem;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--primary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.65rem;
+  margin-bottom: 1.15rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
 }
 
 .page-top-header a {
-    color: var(--primary);
-    text-decoration: none;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.page-top-header a:hover {
+  text-decoration: underline;
 }
 
 .page-foot {
-    width: 100%;
-    /* បង្ខំឱ្យលាតពេញទទឹងទំព័រជានិច្ច */
-    margin-top: auto;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.86rem;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.86rem;
 }
 
 .page-foot .author-credit {
-    color: var(--primary);
-    font-weight: 700;
+  color: var(--primary);
+  font-weight: 700;
 }
 
 .page-foot .page-num {
-    color: var(--muted);
-    font-weight: 600;
+  color: var(--muted);
+  font-weight: 600;
 }
 
 /* ==========================================================================
    TABLE OF CONTENTS
    ========================================================================== */
 .toc-heading {
-    font-size: 1.55rem;
-    font-weight: 800;
-    color: var(--secondary);
-    margin-bottom: 1rem;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 0.85rem;
 }
 
 .toc-list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .toc-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.52rem 0.4rem;
-    border-bottom: 1px dashed #CBD5E1;
-    text-decoration: none;
-    border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.45rem 0.4rem;
+  border-bottom: 1px dashed #CBD5E1;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.15s ease, padding-left 0.15s ease;
 }
 
 .toc-row:hover {
-    background-color: #F0F9FF;
+  background-color: #F0F9FF;
+  padding-left: 0.75rem;
 }
 
 .toc-left {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
 }
 
 .toc-num {
-    color: var(--primary);
-    font-weight: 700;
-    font-size: 0.94rem;
-    min-width: 28px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.92rem;
+  min-width: 28px;
 }
 
 .toc-badge-label {
-    color: var(--primary);
-    font-weight: 700;
-    font-size: 0.94rem;
-    min-width: 120px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.94rem;
+  min-width: 120px;
 }
 
 .toc-title {
-    color: var(--secondary);
-    font-weight: 600;
-    font-size: 0.94rem;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.92rem;
 }
 
 .toc-page {
-    color: var(--muted);
-    font-size: 0.88rem;
-    font-weight: 500;
-    white-space: nowrap;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
-   CLEAN 7-STEP LESSON TYPOGRAPHY
+   CLEAN 8-STEP LESSON TYPOGRAPHY
    ========================================================================== */
 .ch-title {
-    font-size: 1.45rem;
-    font-weight: 800;
-    color: var(--secondary);
-    margin-bottom: 0.9rem;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin-bottom: 0.85rem;
 }
 
 .step-heading {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: var(--secondary);
-    margin-top: 0.75rem;
-    margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-top: 0.65rem;
+  margin-bottom: 0.2rem;
 }
 
 .step-text {
-    font-size: 0.91rem;
-    color: var(--text);
-    margin-bottom: 0.5rem;
-    line-height: 1.7;
+  font-size: 0.89rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+  line-height: 1.65;
 }
 
 .step-list {
-    padding-left: 1.35rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.91rem;
-    color: var(--text);
+  padding-left: 1.35rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.89rem;
+  color: var(--text);
 }
 
 .step-list li {
-    margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.step-list li strong {
+  color: var(--secondary);
 }
 
 code.ic {
-    font-family: var(--font-mono);
-    font-size: 0.84em;
-    background: #F0F9FF;
-    color: var(--primary);
-    border: 1px solid #E0F2FE;
-    padding: 0.08rem 0.38rem;
-    border-radius: 5px;
-    font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  background: #F0F9FF;
+  color: var(--primary);
+  border: 1px solid #E0F2FE;
+  padding: 0.08rem 0.38rem;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 .code-box {
-    background: var(--code-bg);
-    border-radius: 8px;
-    padding: 0.85rem 1.15rem;
-    margin: 0.45rem 0 0.65rem;
-    overflow-x: auto;
+  background: var(--code-bg);
+  border-radius: 8px;
+  padding: 0.75rem 1.15rem;
+  margin: 0.35rem 0 0.55rem;
+  overflow-x: auto;
 }
 
 .code-box pre {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    line-height: 1.55;
-    color: #E2E8F0;
-    margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.79rem;
+  line-height: 1.5;
+  color: #E2E8F0;
+  margin: 0;
 }
 
-.t-kw {
-    color: #F472B6;
+/* Summary Box Styling */
+.summary-box {
+  background: var(--summary-bg);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 6px 6px 0;
+  padding: 0.6rem 0.95rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.87rem;
 }
 
-.t-fn {
-    color: #38BDF8;
+.summary-box strong {
+  color: var(--primary-dark);
 }
 
-.t-str {
-    color: #A3E635;
-}
-
-.t-tag {
-    color: #60A5FA;
-}
-
-.t-attr {
-    color: #FBBF24;
-}
-
-.t-com {
-    color: #64748B;
-    font-style: italic;
-}
+.t-kw { color: #F472B6; }
+.t-fn { color: #38BDF8; }
+.t-str { color: #A3E635; }
+.t-tag { color: #60A5FA; }
+.t-attr { color: #FBBF24; }
+.t-com { color: #64748B; font-style: italic; }
 
 /* ==========================================================================
-   FILE: css/responsive.css (EXACT A4 PAGE FIT - NO OVERFLOW)
+   FILE: css/responsive.css
+   TABLET/MOBILE RESPONSIVE + EXACT A4 PRINT ENGINE
    ========================================================================== */
 
 @media screen and (max-width: 991px) {
-    .page {
-        padding: 2rem 1.75rem;
-        min-height: auto;
-    }
-
-    .cover-page,
-    .thankyou-page {
-        min-height: 540px;
-    }
-
-    .cover-main-title {
-        font-size: 2.2rem;
-    }
+  .page {
+    padding: 2rem 1.75rem;
+    min-height: auto;
+  }
+  .cover-page,
+  .thankyou-page {
+    min-height: 540px;
+  }
+  .cover-main-title {
+    font-size: 2.2rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
-    html {
-        font-size: 15px;
-    }
+  html {
+    font-size: 15px;
+  }
+  .book-container {
+    margin: 0.75rem auto;
+    padding: 0 0.5rem;
+  }
+  .page {
+    padding: 1.5rem 1.15rem;
+    margin-bottom: 1.25rem;
+  }
 
-    .book-container {
-        margin: 0.75rem auto;
-        padding: 0 0.5rem;
-    }
+  /* ផ្នែកក្បាលទំព័រនៅជាជួរដេក (ឆ្វេង-ស្តាំ) */
+  .page-top-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+  }
 
-    .page {
-        padding: 1.5rem 1.15rem;
-        margin-bottom: 1.25rem;
-    }
+  /* ផ្នែកជើងទំព័រនៅជាជួរដេក (ឆ្វេង-ស្តាំ) ជានិច្ច */
+  .page-foot {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .page-top-header,
-    .page-foot {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 0.25rem;
-    }
-
-    .toc-left {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.15rem;
-    }
-
-    .cover-main-title {
-        font-size: 1.85rem;
-    }
+  .toc-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+  .cover-main-title {
+    font-size: 1.85rem;
+  }
 }
 
 /* ==========================================================================
-   A4 PRINT ENGINE (@media print) - ការពារកុំឱ្យសល់ទំព័រទទេចុងក្រោយ 100%
+   A4 PRINT ENGINE (@media print) - NO TAILWIND & EXACT FIT
    ========================================================================== */
 @page {
-    size: A4 portrait;
-    margin: 0 !important;
+  size: A4 portrait;
+  margin: 0 !important;
 }
 
 @media print {
-    * {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-    }
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 
-    html,
-    body {
-        width: 210mm !important;
-        background: #FFFFFF !important;
-        font-size: 10pt;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+  html, body {
+    width: 210mm !important;
+    background: #FFFFFF !important;
+    font-size: 10pt;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
-    .book-container {
-        max-width: 100% !important;
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+  .book-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
-    .page {
-        width: 210mm !important;
-        /* បន្ថយមក 296mm (តិចជាង 297mm ចំនួន 1mm) ដើម្បីកុំឱ្យហៀរចេញទំព័រទទេ */
-        height: 296mm !important;
-        min-height: 296mm !important;
-        max-height: 296mm !important;
-        padding: 15mm 18mm !important;
-        margin: 0 !important;
-        border: none !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
-        page-break-after: always !important;
-        break-after: page !important;
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
-        overflow: hidden !important;
-    }
+  .page {
+    width: 210mm !important;
+    height: 296mm !important;
+    min-height: 296mm !important;
+    max-height: 296mm !important;
+    padding: 14mm 18mm !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    overflow: hidden !important;
+  }
 
-    /* បិទការបំបែកទំព័រនៅសន្លឹកចុងក្រោយបង្អស់ */
-    .page:last-of-type,
-    .page:last-child,
-    #thank-you {
-        page-break-after: avoid !important;
-        break-after: avoid !important;
-    }
+  .page:last-of-type,
+  .page:last-child,
+  #thank-you {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
 
-    .page-foot {
-        width: 100% !important;
-        margin-top: auto !important;
-    }
+  .page-foot {
+    width: 100% !important;
+    margin-top: auto !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
 }
