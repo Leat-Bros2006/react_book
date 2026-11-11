@@ -342,6 +342,65 @@ code.ic {
 .t-tag { color: #60A5FA; }
 .t-attr { color: #FBBF24; }
 .t-com { color: #64748B; font-style: italic; }
+/* ==========================================================================
+   CLEAN BROWSER WINDOW MOCKUP (OUTPUT SECTION)
+   ========================================================================== */
+.browser-window {
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  background: #FFFFFF;
+  margin: 0.5rem 0 0.65rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* របារខាងលើនៃ Browser (មានគ្រាប់ចុច ៣ និងប្រអប់ URL វែង) */
+.browser-header {
+  background: #F8FAFC;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ចំណុចមូល ៣ គ្រាប់ (ក្រហម លឿង បៃតង) */
+.browser-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red { background: #EF4444; }
+.dot-yellow { background: #F59E0B; }
+.dot-green { background: #10B981; }
+
+/* ប្រអប់អាសយដ្ឋាន URL (វែងទូលាយ ផ្ទៃស គែមស្តើង) */
+.browser-url-bar {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  color: #64748B;
+  font-family: var(--font-mono);
+  width: 100%;
+  letter-spacing: 0.2px;
+}
+
+/* ផ្ទៃបង្ហាញលទ្ធផលខាងក្នុង */
+.browser-canvas {
+  padding: 14px 16px;
+  background: #FFFFFF;
+}
 
 /* ==========================================================================
    FILE: css/responsive.css
