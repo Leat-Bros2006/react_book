@@ -13,20 +13,77 @@
     <main class="book-container">
 
         <!-- ====================================================================
-         ទំព័រ 1: COVER PAGE (100% MIDDLE & CENTER)
+         ទំព័រ 1: COVER PAGE (MODERN TECH EDITORIAL)
          ==================================================================== -->
         <section class="page cover-page" id="cover">
-            <div class="cover-center-box">
-                <span class="cover-badge-pill">Technical Documentation &amp; Learning Guide</span>
+            <!-- និមិត្តសញ្ញា React Atom ផ្ទៃខាងក្រោយ -->
+            <svg class="cover-bg-atom" viewBox="-11.5 -10.23174 23 20.46348" fill="none">
+                <circle cx="0" cy="0" r="2.05" fill="#38BDF8" />
+                <g stroke="#38BDF8" stroke-width="1">
+                    <ellipse rx="11" ry="4.2" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                </g>
+            </svg>
+
+            <div class="cover-top-bar">
+                <span class="cover-edition">FRONTEND DEVELOPMENT • 2026</span>
+                <span class="cover-pill">១៦ ជំពូក + គម្រោងអនុវត្ត</span>
+            </div>
+
+            <div class="cover-hero">
+                <div class="cover-kicker">&lt;ReactJS /&gt; Complete Learning Guide</div>
                 <h1 class="cover-main-title">React.js ពីមូលដ្ឋាន<br>ដល់ការអនុវត្ត</h1>
-                <p class="cover-subtitle">React.js: From Beginner to Advanced Practical Development</p>
-                <div class="cover-line"></div>
-                <div class="cover-meta">
-                    <p>រៀបចំដោយ៖ <strong>លាត ប្រុស</strong></p>
-                    <p>ទំនាក់ទំនងមកខ្ញុំ៖ <a href="https://t.me/leatbros0979445608" target="_blank"
-                            rel="noopener">Telegram</a>
-                    </p>
+                <p class="cover-subtitle">
+                    សៀវភៅមេរៀនបង្កើត Modern Web Application តាមបែប Component-Based Architecture, Hooks, Routing និង API
+                    Integration
+                </p>
+
+                <!-- ប្រអប់កូដគំរូ -->
+                <div class="cover-code-preview">
+                    <div class="cover-code-dots">
+                        <span class="browser-dot dot-red"></span>
+                        <span class="browser-dot dot-yellow"></span>
+                        <span class="browser-dot dot-green"></span>
+                        <span style="margin-left: 6px;">src/App.jsx</span>
+                    </div>
+                    <pre><span class="t-kw">import</span> { useState } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
+
+<span class="t-kw">export default function</span> <span class="t-fn">App</span>() {
+  <span class="t-kw">const</span> [ready, setReady] = <span class="t-fn">useState</span>(<span class="t-kw">true</span>);
+  <span class="t-kw">return</span> &lt;<span class="t-tag">h1</span>&gt;{ready ? <span class="t-str">"តោះចាប់ផ្តើមរៀន React.js ទាំងអស់គ្នា!"</span> : <span class="t-str">"Loading..."</span>}&lt;/<span class="t-tag">h1</span>&gt;;
+}</pre>
                 </div>
+
+                <!-- ចំណុចសំខាន់ៗទាំង ៤ -->
+                <div class="cover-grid">
+                    <div class="cover-feature-card">
+                        <strong>១. JSX &amp; Components</strong>
+                        <span>រៀបចំរចនាសម្ព័ន្ធ UI និងបញ្ជូនទិន្នន័យតាម Props</span>
+                    </div>
+                    <div class="cover-feature-card">
+                        <strong>២. State &amp; React Hooks</strong>
+                        <span>គ្រប់គ្រងទិន្នន័យមានចលនាដោយ useState, useEffect &amp; useRef</span>
+                    </div>
+                    <div class="cover-feature-card">
+                        <strong>៣. Forms &amp; LocalStorage</strong>
+                        <span>គ្រប់គ្រង Controlled Inputs និងរក្សាទុកទិន្នន័យអចិន្ត្រៃយ៍</span>
+                    </div>
+                    <div class="cover-feature-card">
+                        <strong>៤. Routing, API &amp; Project</strong>
+                        <span>តភ្ជាប់ទំព័រ ទាញទិន្នន័យ JSON និងបង្កើត E-Commerce Website</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover-bottom-card">
+                <div class="cover-author-info">
+                    <p>រៀបរៀង និងចងក្រងដោយ៖</p>
+                    <h3>លាត ប្រុស</h3>
+                </div>
+                <a href="https://t.me/leatbros0979445608" target="_blank" rel="noopener" class="cover-tg-btn">
+                    ទំនាក់ទំនងមកកាន់ខ្ញុំ ➔
+                </a>
             </div>
         </section>
 
@@ -48,12 +105,12 @@
                                 React.js &amp; Virtual DOM</span></div><span class="toc-page">ទំព័រ 4</span>
                     </a>
                     <a href="#chapter-02" class="toc-row">
-                        <div class="toc-left"><span class="toc-num">02.</span><span class="toc-title">React Development
-                                Environment (Vite Setup)</span></div><span class="toc-page">ទំព័រ 5</span>
+                        <div class="toc-left"><span class="toc-num">02.</span><span class="toc-title">React Setup
+                                (Vite) &amp; Project Structure</span></div><span class="toc-page">ទំព័រ 5</span>
                     </a>
                     <a href="#chapter-03" class="toc-row">
-                        <div class="toc-left"><span class="toc-num">03.</span><span class="toc-title">JSX Fundamentals
-                                &amp; Fragment</span></div><span class="toc-page">ទំព័រ 6</span>
+                        <div class="toc-left"><span class="toc-num">03.</span><span class="toc-title">JSX
+                                (JavaScript XML)</span></div><span class="toc-page">ទំព័រ 6</span>
                     </a>
                     <a href="#chapter-04" class="toc-row">
                         <div class="toc-left"><span class="toc-num">04.</span><span class="toc-title">Array &amp; Object
@@ -80,8 +137,8 @@
                                 Rendering</span></div><span class="toc-page">ទំព័រ 12</span>
                     </a>
                     <a href="#chapter-10" class="toc-row">
-                        <div class="toc-left"><span class="toc-num">10.</span><span class="toc-title">Lists and Keys
-                                (Array Mapping)</span></div><span class="toc-page">ទំព័រ 13</span>
+                        <div class="toc-left"><span class="toc-num">10.</span><span class="toc-title">Lists
+                                Rendering</span></div><span class="toc-page">ទំព័រ 13</span>
                     </a>
                     <a href="#chapter-11" class="toc-row">
                         <div class="toc-left"><span class="toc-num">11.</span><span class="toc-title">Forms Handling
@@ -104,12 +161,7 @@
                                 (Fetch &amp; Async/Await)</span></div><span class="toc-page">ទំព័រ 18</span>
                     </a>
                     <a href="#chapter-16" class="toc-row">
-                        <div class="toc-left"><span class="toc-num">16.</span><span class="toc-title">React Architecture
-                                &amp; Pure CSS</span></div><span class="toc-page">ទំព័រ 19</span>
-                    </a>
-                    <a href="#chapter-17" class="toc-row">
-                        <div class="toc-left"><span class="toc-num">17.</span><span class="toc-title">Practical Project:
-                                Task Manager</span></div><span class="toc-page">ទំព័រ 20</span>
+                        <div class="toc-left"><span class="toc-num">16.</span><span class="toc-title">React Architecture</span></div><span class="toc-page">ទំព័រ 19</span>
                     </a>
                 </nav>
             </div>
@@ -133,36 +185,36 @@
                 <h2 class="toc-heading">មាតិកាលំហាត់ និង Project</h2>
 
                 <nav class="toc-list">
-                    <a href="#chapter-06" class="toc-row">
+                    <a href="https://1-component-props.vercel.app/" target="_blank" class="toc-row">
                         <div class="toc-left">
                             <span class="toc-badge-label">លំហាត់ទី១៖</span>
-                            <span class="toc-title">Reusable Component, Props &amp; Destructuring</span>
+                            <span class="toc-title">Component, Props &amp; Destructuring</span>
                         </div>
                         <span class="toc-page">ទំព័រ 9</span>
                     </a>
 
-                    <a href="#chapter-10" class="toc-row">
+                    <a href="https://2-list-rendering.vercel.app/" target="_blank" class="toc-row">
                         <div class="toc-left">
                             <span class="toc-badge-label">លំហាត់ទី២៖</span>
-                            <span class="toc-title">Dynamic List Rendering &amp; Unique Keys</span>
+                            <span class="toc-title">Component, Props &amp; Destructuring (អនុវត្តខ្លួនឯង)</span>
                         </div>
-                        <span class="toc-page">ទំព័រ 13</span>
+                        <span class="toc-page">ទំព័រ 9</span>
                     </a>
 
-                    <a href="#chapter-12" class="toc-row">
+                    <a href="https://3-form-register-react.vercel.app/" target="_blank" class="toc-row">
                         <div class="toc-left">
                             <span class="toc-badge-label">លំហាត់ទី៣៖</span>
-                            <span class="toc-title">Controlled Input &amp; LocalStorage Persistence</span>
+                            <span class="toc-title">Forms Handling</span>
                         </div>
-                        <span class="toc-page">ទំព័រ 15</span>
+                        <span class="toc-page">ទំព័រ 14</span>
                     </a>
 
-                    <a href="#chapter-17" class="toc-row">
+                    <a href="https://react-project-teach-4vo8.vercel.app/" target="_blank" class="toc-row">
                         <div class="toc-left">
                             <span class="toc-badge-label">Project បញ្ចប់ថ្នាក់៖</span>
-                            <span class="toc-title">Complete Task Manager Web App (Pure React &amp; CSS)</span>
+                            <span class="toc-title">E-Commerce Website</span>
                         </div>
-                        <span class="toc-page">ទំព័រ 20</span>
+                        <span class="toc-page">ទំព័រ 19</span>
                     </a>
                 </nav>
             </div>
@@ -185,33 +237,44 @@
 
                 <h2 class="ch-title">01. Introduction to React.js &amp; Virtual DOM</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">React.js គឺជា JavaScript Library ដ៏ពេញនិយមបំផុតរបស់ក្រុមហ៊ុន Meta សម្រាប់បង្កើត
-                    User Interface (UI) លើ Web Application តាមបែប Single Page Application (SPA)។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>React.js</strong> គឺជា JavaScript Library
+                    ដ៏ពេញនិយមមួយ ដែលបង្កើតឡើងដោយក្រុមហ៊ុន Facebook (Meta) សម្រាប់អភិវឌ្ឍផ្ទៃខាងមុខនៃគេហទំព័រ (UI) តាមបែប
+                    <strong>Single Page Application (SPA)</strong>។
+                </p>
 
-                <p class="step-heading">2. Key Concepts &amp; Roles (តួមេ និងមុខងារខ្វះមិនបាន):</p>
-                <ul class="step-list">
-                    <li><strong>Component-Based Architecture (តួមេ UI)៖</strong> បំបែកអេក្រង់ទាំងមូលជាបំណែកតូចៗឯករាជ្យ
-                        ដែលអាចបង្កើតម្តង និងយកទៅប្រើឡើងវិញបានច្រើនដង។</li>
-                    <li><strong>Virtual DOM (មេបង្កើនល្បឿន)៖</strong> ជាច្បាប់ចម្លងនៃ DOM លើ Memory។ ពេលទិន្នន័យប្តូរ
-                        React គណនាត្រង់ណាដែលប្តូរ រួចធ្វើបច្ចុប្បន្នភាពតែចំណុចនោះ បើគ្មានវាទេ ទំព័រនឹងត្រូវ Reload
-                        ពេញលេញយឺតយ៉ាវ។</li>
-                    <li><strong>Declarative Syntax៖</strong> យើងគ្រាន់តែប្រាប់ React ថាតើ UI គួរមានទម្រង់បែបណា នោះ React
-                        នឹងចាត់ចែង Render ឱ្យដោយស្វ័យប្រវត្តិ។</li>
+                <p class="step-heading">2. មូលហេតុដែលគួរប្រើប្រាស់ React.js៖</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><strong>Component-Based Architecture (បែងចែកជាបំណែកតូចៗ)៖</strong>
+                        បំបែកផ្ទៃគេហទំព័រទាំងមូលជាបំណែកតូចៗដាច់ដោយឡែកពីគ្នា (Component) ដែលបង្កើតតែម្តង
+                        ប៉ុន្តែអាចយកទៅប្រើឡើងវិញបានច្រើនដង។</li>
+                    <li><strong>Virtual DOM (បង្កើនល្បឿនគេហទំព័រ)៖</strong> ជាទម្រង់ចម្លងនៃ DOM ក្នុង Memory
+                        ដែលជួយកែប្រែតែចំណុចណាដែលមានការផ្លាស់ប្តូរប៉ុណ្ណោះ ដោយមិនបាច់ Reload ទំព័រទាំងមូលឡើងវិញឡើយ។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើសម្រាប់បង្កើតគេហទំព័រដែលមានទិន្នន័យផ្លាស់ប្តូរញឹកញាប់ ដូចជា Dashboard, Social
-                    Media, E-commerce និង Web Apps ទំនើបៗ។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">លក្ខណៈពិសេសស្នូលរបស់ React.js៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>Declarative UI៖</strong> យើងគ្រាន់តែកំណត់រូបរាង UI
+                            ទៅតាមទិន្នន័យ នោះ React នឹងរៀបចំបង្ហាញលើអេក្រង់ឱ្យដោយស្វ័យប្រវត្តិ (ដោយមិនបាច់ប្រើ <code
+                                class="ic">document.getElementById()</code> ទៅចាប់ DOM កែប្រែដោយដៃដូច JavaScript
+                            ឡើយ)។</li>
+                        <li><strong>Unidirectional Data Flow៖</strong> ទិន្នន័យត្រូវបានបញ្ជូនក្នុងទិសដៅតែមួយ
+                            គឺពីលើចុះក្រោម
+                            (Parent ➔ Child) ធ្វើឱ្យងាយស្រួលគ្រប់គ្រង និងស្វែងរកកំហុស។</li>
+                    </ul>
+                </div>
+
+                <p class="step-heading">3. ប្រើពេលណា (When to Use):</p>
+                <p class="step-text">ប្រើសម្រាប់បង្កើតគេហទំព័រដែលមានទិន្នន័យផ្លាស់ប្តូរញឹកញាប់ ដូចជា Admin Dashboard,
+                    Social Media, E-commerce និង Web Apps ទំនើបៗ។</p>
 
                 <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
-                    <pre><span class="t-kw">import</span> React <span class="t-kw">from</span> <span class="t-str">'react'</span>;
-
-<span class="t-kw">function</span> <span class="t-fn">App</span>() {
+                    <pre><span class="t-kw">function</span> <span class="t-fn">App</span>() {
   <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">div</span> <span class="t-attr">style</span>={{ padding: <span class="t-str">'14px'</span>, background: <span class="t-str">'#E0F2FE'</span>, borderRadius: <span class="t-str">'6px'</span> }}&gt;
-      &lt;<span class="t-tag">h1</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, margin: <span class="t-str">'0 0 6px'</span> }}&gt;សួស្តី React.js!&lt;/<span class="t-tag">h1</span>&gt;
+    &lt;<span class="t-tag">div</span> <span class="t-attr">style</span>={{ padding: <span class="t-str">'12px'</span>, background: <span class="t-str">'#E0F2FE'</span>, borderRadius: <span class="t-str">'6px'</span> }}&gt;
+      &lt;<span class="t-tag">h1</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, margin: <span class="t-str">'0 0 4px'</span> }}&gt;សួស្តី React.js!&lt;/<span class="t-tag">h1</span>&gt;
       &lt;<span class="t-tag">p</span> <span class="t-attr">style</span>={{ margin: 0, color: <span class="t-str">'#0F172A'</span> }}&gt;ស្វាគមន៍មកកាន់ការសិក្សា React.js ពីមូលដ្ឋាន!&lt;/<span class="t-tag">p</span>&gt;
     &lt;/<span class="t-tag">div</span>&gt;
   );
@@ -220,15 +283,7 @@
 <span class="t-kw">export default</span> App;</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">function App()</code> គឺជា Functional Component មូលដ្ឋានដែលប្រគល់ធាតុ UI មកវិញ។
-                    </li>
-                    <li><code class="ic">export default App;</code> បញ្ជូន Component
-                        នេះចេញដើម្បីឱ្យឯកសារផ្សេងទៀតអាចទាញយកទៅប្រើបាន។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">5. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -236,17 +291,17 @@
                         <div class="browser-url-bar">http://localhost:5173</div>
                     </div>
                     <div class="browser-canvas">
-                        <div style="background:#E0F2FE; padding:12px 14px; border-radius:6px;">
-                            <h1 style="color:#0284C7; font-size:1.25rem; margin:0 0 4px; font-weight:800;">សួស្តី
+                        <div style="background:#E0F2FE; padding:10px 14px; border-radius:6px;">
+                            <h1 style="color:#0284C7; font-size:1.15rem; margin:0 0 3px; font-weight:800;">សួស្តី
                                 React.js!</h1>
-                            <p style="margin:0; font-size:0.86rem; color:#0F172A;">ស្វាគមន៍មកកាន់ការសិក្សា React.js
+                            <p style="margin:0; font-size:0.84rem; color:#0F172A;">ស្វាគមន៍មកកាន់ការសិក្សា React.js
                                 ពីមូលដ្ឋាន!</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> React គឺជា UI Library ដំណើរការតាមរយៈ Component និង
+                    <strong>6. Summary (សង្ខេបមេរៀន)៖</strong> React គឺជា UI Library ដំណើរការតាមរយៈ Component និង
                     Virtual DOM ជួយឱ្យ Web Application ដំណើរការលឿន មិនបាច់ Reload ទំព័រឡើយ។
                 </div>
             </div>
@@ -258,74 +313,89 @@
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 5: CHAPTER 02 - REACT ENVIRONMENT (VITE SETUP)
+         ទំព័រ 5: CHAPTER 02 - REACT SETUP (VITE) & PROJECT STRUCTURE
          ==================================================================== -->
         <section class="page" id="chapter-02">
             <div class="page-body">
                 <header class="page-top-header">
                     <a href="#toc">React.js</a>
-                    <span>02. React Development Environment</span>
+                    <span>02. Vite Setup &amp; Project Structure</span>
                 </header>
 
-                <h2 class="ch-title">02. React Development Environment (Vite Setup)</h2>
+                <h2 class="ch-title">02. React Setup (Vite) &amp; Project Structure</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">React Environment គឺជាការរៀបចំ Node.js, npm និង Build Tool ទំនើប (Vite)
-                    នៅលើកុំព្យូទ័រ ដើម្បីដំណើរការ និងអភិវឌ្ឍគម្រោង React ដោយរលូន។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Vite</strong> គឺជា Build Tool ជំនាន់ថ្មីដែលប្រើសម្រាប់បង្កើត
+                    និងដំណើរការគម្រោង React.js យ៉ាងលឿនបំផុត ដោយគាំទ្រ Hot Module Replacement (HMR)
+                    មានន័យថា កែកូដភ្លាមឃើញលទ្ធផលភ្លាម។</p>
 
-                <p class="step-heading">2. Key Tools &amp; Roles (តួមេ និងមុខងារខ្វះមិនបាន):</p>
-                <ul class="step-list">
-                    <li><strong>Node.js (មេដំណើរការ JavaScript ក្រៅ Browser)៖</strong> ត្រូវការជាចាំបាច់ដើម្បីដំណើរការ
-                        npm និង Developer Tools។</li>
-                    <li><strong>npm (មេគ្រប់គ្រងកញ្ចប់បណ្ណាល័យ)៖</strong> ប្រើសម្រាប់ទាញយក React និង Libraries
-                        ផ្សេងៗចូលម៉ាស៊ីន។</li>
-                    <li><strong>Vite (មេ Build Tool ជំនាន់ថ្មី)៖</strong> លឿនជាង Create React App (CRA) រាប់សិបដង
-                        និងគាំទ្រ Hot Module Replacement (HMR) កែប្រែកូដភ្លាមឃើញលទ្ធផលភ្លាម។</li>
+                <p class="step-heading">2. មុខងារ និងពាក្យបញ្ជាសំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">npm create vite@latest my-app -- --template react</code> <strong>៖</strong>
+                        បង្កើតគម្រោង React ថ្មីតាមរយៈ Vite។</li>
+                    <li><code class="ic">npm install</code> <strong>៖</strong>
+                        ទាញយក និងដំឡើងបណ្ណាល័យចាំបាច់ទាំងអស់ចូលក្នុងថត <code class="ic">node_modules/</code>។</li>
+                    <li><code class="ic">npm run dev</code> <strong>៖</strong> ប្រើសម្រាប់ Run Project។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើរាល់ពេលចាប់ផ្តើមបង្កើតគម្រោង React ថ្មីនៅលើម៉ាស៊ីនផ្ទាល់ខ្លួនតាម Terminal។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">តួនាទី File និង Folder
+                        ទាំងអស់ដែលកើតឡើងដោយស្វ័យប្រវត្តិ (Default Project Structure)៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><code class="ic">node_modules/</code> <strong>(Packages Folder)៖</strong> ថតផ្ទុកកូដ
+                            Libraries ទាំងអស់របស់ React និង Vite ដែលបានទាញយកមកដំឡើង។</li>
+                        <li><code class="ic">public/</code> <strong>(Static Folder)៖</strong> ថតផ្ទុកឯកសារ Static
+                            ដូចជា Favicon (<code class="ic">vite.svg</code>) ឬរូបភាពដែលហៅប្រើដោយផ្ទាល់។</li>
+                        <li><code class="ic">src/</code> <strong>(Source Code Folder)៖</strong> ថតស្នូលសម្រាប់សរសេរកូដ
+                            React ទាំងអស់ ដែលខាងក្នុងមាន៖
+                            <ul class="step-list" style="list-style-type: disc; margin-top: 2px; margin-bottom: 2px;">
+                                <li><code class="ic">assets/</code> <strong>៖</strong> ថតផ្ទុករូបភាព ឬ Icons (<code
+                                        class="ic">react.svg</code>) សម្រាប់ Import ចូលក្នុង Components។</li>
+                                <li><code class="ic">main.jsx</code> <strong>(Entry Point)៖</strong>
+                                    ឯកសារចាប់ផ្តើមដែលនាំយក
+                                    <code class="ic">App.jsx</code> ទៅបញ្ចូលក្នុង <code class="ic">#root</code> នៃ <code
+                                        class="ic">index.html</code>។
+                                </li>
+                                <li><code class="ic">App.jsx</code> <strong>(Root Component)៖</strong> Component
+                                    មេសម្រាប់សរសេរ និងប្រមូលផ្តុំ UI ទាំងអស់នៃកម្មវិធី។</li>
+                                <li><code class="ic">App.css</code> &amp; <code class="ic">index.css</code>
+                                    <strong>(Stylesheets)៖</strong> ឯកសារ CSS សម្រាប់តុបតែង <code
+                                        class="ic">App.jsx</code> និងកំណត់ Style រួមទូទាំងគេហទំព័រ។
+                                </li>
+                            </ul>
+                        </li>
+                        <li><code class="ic">index.html</code> <strong>(Main HTML)៖</strong> ឯកសារ HTML តែមួយគត់របស់ SPA
+                            ដែលផ្ទុក <code class="ic">&lt;div id="root"&gt;</code> សម្រាប់បង្ហាញ React UI។</li>
+                        <li><code class="ic">package.json</code> <strong>(Project Config)៖</strong> កត់ត្រាឈ្មោះគម្រោង,
+                            Scripts (<code class="ic">dev</code>, <code class="ic">build</code>) និងបញ្ជី Libraries ដែល
+                            បានដំឡើងចូល Project។</li>
+                        <li><code class="ic">package-lock.json</code> <strong>(Dependency Lock)៖</strong> ចាក់សោលេខ
+                            Version ជាក់លាក់នៃ Libraries ទាំងអស់ ដើម្បីឱ្យការដំឡើងលើម៉ាស៊ីនផ្សេងដំណើរការដូចគ្នា ១០០%។
+                        </li>
+                        <li><code class="ic">vite.config.js</code> <strong>(Vite Configuration)៖</strong>
+                            ឯកសារកំណត់ការដំណើរការ
+                            និង Plugins របស់ Vite។</li>
+                        <li><code class="ic">eslint.config.js</code> <strong>(Code Linter)៖</strong>
+                            ឯកសារកំណត់ច្បាប់ត្រួតពិនិត្យ
+                            និងជួយរកកំហុស Syntax ក្នុងកូដ JavaScript / React។</li>
+                        <li><code class="ic">.gitignore</code> <strong>(Git Ignore)៖</strong> កំណត់ឈ្មោះថត ឬឯកសារ ដូចជា
+                            <code class="ic">node_modules/</code> ដែលមិនត្រូវ Upload ទៅកាន់ GitHub។
+                        </li>
+                    </ul>
+                </div>
 
-                <p class="step-heading">4. Syntax (ពាក្យបញ្ជាបង្កើត Project ក្នុង Terminal):</p>
+                <p class="step-heading">3. Syntax (ពាក្យបញ្ជាបង្កើត Project ក្នុង Terminal):</p>
                 <div class="code-box">
-                    <pre><span class="t-com"># ១. បង្កើតគម្រោងថ្មីជាមួយ Vite</span>
-npm create vite@latest my-react-app -- --template react
-
-<span class="t-com"># ២. ចូលទៅកាន់ Folder គម្រោង និងដំឡើងបណ្ណាល័យ</span>
+                    <pre>npm create vite@latest my-react-app -- --template react
 cd my-react-app
 npm install
-
-<span class="t-com"># ៣. បើកដំណើរការ Development Server</span>
 npm run dev</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">npm install</code> បង្កើត Folder <code class="ic">node_modules</code>
-                        ដែលផ្ទុកកូដស្នូលរបស់ React ទាំងអស់។</li>
-                    <li><code class="ic">npm run dev</code> បើក Server សាកល្បងនៅអាសយដ្ឋាន <code
-                            class="ic">http://localhost:5173</code>។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <div style="text-align:center; padding:10px;">
-                            <h2 style="font-size:1.1rem; color:#0284C7; margin:0 0 4px;">⚡ Vite + React</h2>
-                            <p style="font-size:0.84rem; color:#64748B; margin:0;">Development server is running at port
-                                5173</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> ការប្រើ Vite រួមជាមួយ Node.js គឺជាមធ្យោបាយបង្កើតគម្រោង
-                    React ស្តង់ដារលឿនបំផុត និងមានប្រសិទ្ធភាពខ្ពស់នាពេលបច្ចុប្បន្ន។
+                    <strong>4. Summary (សង្ខេបមេរៀន)៖</strong> ប្រើ Vite ដើម្បីបង្កើតគម្រោង React
+                    ហើយត្រូវចងចាំលំហូរការងារ៖ <code class="ic">index.html (#root)</code> ➔ <code
+                        class="ic">src/main.jsx</code> ➔ <code class="ic">src/App.jsx</code>។
                 </div>
             </div>
 
@@ -336,45 +406,60 @@ npm run dev</pre>
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 6: CHAPTER 03 - JSX FUNDAMENTALS & FRAGMENT
+         ទំព័រ 6: CHAPTER 03 - JSX (JavaScript XML)
          ==================================================================== -->
         <section class="page" id="chapter-03">
             <div class="page-body">
                 <header class="page-top-header">
                     <a href="#toc">React.js</a>
-                    <span>03. JSX Fundamentals</span>
+                    <span>03. JSX (JavaScript XML)</span>
                 </header>
 
-                <h2 class="ch-title">03. JSX Fundamentals &amp; Fragment</h2>
+                <h2 class="ch-title">03. JSX (JavaScript XML)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">JSX (JavaScript XML) គឺជាទម្រង់ពង្រីករបស់ JavaScript
-                    ដែលអនុញ្ញាតឱ្យយើងសរសេរទម្រង់កូដស្រដៀង HTML នៅខាងក្នុង JavaScript យ៉ាងងាយស្រួល។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>JSX (JavaScript XML)</strong>
+                    គឺជាការសរសេរកូដដែលមានទម្រង់ស្រដៀងនឹង HTML នៅក្នុង JavaScript ដើម្បីបង្កើត UI
+                    និងរៀបចំ Layout។</p>
 
-                <p class="step-heading">2. Key Rules &amp; Roles (ច្បាប់តឹងរ៉ឹងខ្វះមិនបានក្នុង JSX):</p>
-                <ul class="step-list">
-                    <li><strong>Single Root Element (មេរុំព័ទ្ធ)៖</strong> Component ត្រូវតែប្រគល់ធាតុ Root តែមួយគត់។
-                        បើមិនចង់បង្កើត <code class="ic">&lt;div&gt;</code> លើសក្នុង DOM ត្រូវប្រើ <strong>Fragment
-                            (<code class="ic">&lt;&gt;...&lt;/&gt;</code>)</strong>។</li>
-                    <li><strong>Close All Tags (មេបិទស្លាក)៖</strong> គ្រប់ស្លាកទាំងអស់ត្រូវតែបិទជានិច្ច រួមទាំងស្លាកទោល
-                        ដូចជា <code class="ic">&lt;img /&gt;</code>, <code class="ic">&lt;input /&gt;</code> និង <code
-                            class="ic">&lt;br /&gt;</code>។</li>
-                    <li><strong>Expressions in JSX (<code class="ic">{ }</code>)៖</strong> រាល់ការហៅអថេរ គណនាលេខ
-                        ឬលក្ខខណ្ឌ ត្រូវដាក់ក្នុងសញ្ញាខ្នងក្រពើ <code class="ic">{ }</code>។</li>
-                    <li><strong>Attributes៖</strong> ប្រើ <code class="ic">className</code> ជំនួស <code
-                            class="ic">class</code> និងប្រើ <code class="ic">htmlFor</code> ជំនួស <code
-                            class="ic">for</code>។</li>
+                <p class="step-heading">2. មុខងារ និងច្បាប់សំខាន់ៗក្នុង JSX:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><strong>ភាពខុសគ្នារវាង JS និង JSX ក្នុង Component៖</strong> ផ្នែកខាងលើ <code
+                            class="ic">return</code> (បង្កើតអថេរ, Function, គណនា) គឺជាកូដ <strong>JavaScript (JS)
+                            ធម្មតា</strong> ចំណែកកូដដែលនៅខាងក្នុង <code class="ic">return (...)</code> គឺជាកូដ
+                        <strong>JSX</strong>។
+                    </li>
+                    <li><code class="ic">&lt;&gt;...&lt;/&gt;</code> <strong>(React Fragment)៖</strong>
+                        ប្រើសម្រាប់រុំព័ទ្ធធាតុ JSX ច្រើនចូលគ្នាជា Single Root ដោយមិនបង្កើត <code
+                            class="ic">&lt;div&gt;</code> លើសក្នុង DOM។</li>
+                    <li><code class="ic">{ expression }</code> <strong>(JavaScript Expressions)៖</strong> ដាក់អថេរ
+                        ការគណនាលេខ ឬ Ternary Operator នៅក្នុងសញ្ញាខ្នងក្រពើ <code class="ic">{ }</code>។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើរាល់ពេលសរសេរកូដរៀបចំទម្រង់ UI ក្នុង React Component។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ច្បាប់របស់ JSX៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>Single Root Element (ត្រូវមាន Parent ក្តោប)៖</strong> មិនអាច <code
+                                class="ic">return</code> ធាតុ (Elements) ច្រើននៅទន្ទឹមគ្នាបានទេ គឺត្រូវតែមាន Tag
+                            មេមួយនៅខាងក្រៅក្តោបជានិច្ច ដូចជា <code class="ic">&lt;div&gt;...&lt;/div&gt;</code> ឬ
+                            Fragment <code class="ic">&lt;&gt;...&lt;/&gt;</code>។</li>
+                        <li><strong>Close All Tags៖</strong> គ្រប់ស្លាកទាំងអស់ត្រូវបិទជានិច្ច រួមទាំងស្លាកទោលដូចជា <code
+                                class="ic">&lt;img /&gt;</code>, <code class="ic">&lt;input /&gt;</code>, <code
+                                class="ic">&lt;br /&gt;</code>។</li>
+                        <li><strong>camelCase Attributes៖</strong> ប្រើ <code class="ic">className</code> ជំនួស <code
+                                class="ic">class</code> និងប្រើ <code class="ic">htmlFor</code> ជំនួស <code
+                                class="ic">for</code>។</li>
+                    </ul>
+                </div>
 
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដបែងចែក JS និង JSX):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">function</span> <span class="t-fn">CourseInfo</span>() {
+  <span class="t-com">// 1. ផ្នែក JavaScript (JS) ធម្មតា (មុន return)</span>
   <span class="t-kw">const</span> title = <span class="t-str">"React.js ពីមូលដ្ឋានដល់ការអនុវត្ត"</span>;
   <span class="t-kw">const</span> fee = 45;
 
+  <span class="t-com">// 2. ផ្នែក JSX ចាប់ផ្តើមពីក្នុង return (...)</span>
   <span class="t-kw">return</span> (
     &lt;&gt;
       &lt;<span class="t-tag">h3</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, margin: <span class="t-str">'0 0 4px'</span> }}&gt;វគ្គ៖ {title}&lt;/<span class="t-tag">h3</span>&gt;
@@ -387,14 +472,7 @@ npm run dev</pre>
 <span class="t-kw">export default</span> CourseInfo;</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">&lt;&gt;...&lt;/&gt;</code> ជា React Fragment ជួយរុំព័ទ្ធធាតុកូនដោយមិនបង្កើត
-                        HTML Tag ឥតប្រយោជន៍លើ DOM។</li>
-                    <li><code class="ic">{fee - 10}</code> បង្កប់ការគណនា JavaScript ដោយផ្ទាល់ក្នុង JSX។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">4. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -402,18 +480,20 @@ npm run dev</pre>
                         <div class="browser-url-bar">http://localhost:5173</div>
                     </div>
                     <div class="browser-canvas">
-                        <h3 style="color:#0284C7; font-size:1.05rem; margin:0 0 4px; font-weight:700;">វគ្គ៖ React.js
+                        <h3 style="color:#0284C7; font-size:1.02rem; margin:0 0 4px; font-weight:700;">វគ្គ៖ React.js
                             ពីមូលដ្ឋានដល់ការអនុវត្ត</h3>
-                        <p style="margin:0 0 8px; font-size:0.86rem; color:#475569;">តម្លៃ៖ $45 (ចុះសល់ត្រឹម $35)</p>
+                        <p style="margin:0 0 6px; font-size:0.84rem; color:#475569;">តម្លៃ៖ $45 (ចុះសល់ត្រឹម $35)</p>
                         <input type="text" placeholder="បញ្ចូលឈ្មោះសិស្ស..."
-                            style="border:1px solid #CBD5E1; padding:4px 8px; border-radius:4px; font-size:0.82rem;">
+                            style="border:1px solid #CBD5E1; padding:4px 8px; border-radius:4px; font-size:0.80rem;">
                     </div>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> JSX ត្រូវតែបិទស្លាកគ្រប់កន្លែង មាន Parent តែមួយ (ឬប្រើ
-                    Fragment <code class="ic">&lt;&gt;...&lt;/&gt;</code>) និងប្រើ <code class="ic">{ }</code>
-                    បង្ហាញតម្លៃអថេរ។
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> ខាងលើ <code class="ic">return</code> ជាកូដ JS ធម្មតា
+                    រីឯក្នុង <code class="ic">return (...)</code> ជា JSX ហើយប្រសិនបើចង់ <code class="ic">return</code>
+                    ចាប់ពី ២ ធាតុឡើងទៅ ត្រូវមាន Parent ក្តោបដាច់ខាត
+                    (<code class="ic">&lt;&gt;...&lt;/&gt;</code>) និងប្រើ <code class="ic">{ }</code> បង្ហាញតម្លៃអថេរ ឬ
+                    Expression (កន្សោមគណនា)។
                 </div>
             </div>
 
@@ -424,8 +504,8 @@ npm run dev</pre>
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 7: CHAPTER 04 - ARRAY & OBJECT DESTRUCTURING
-         ==================================================================== -->
+        ទំព័រ 7: CHAPTER 04 - ARRAY & OBJECT DESTRUCTURING
+        ==================================================================== -->
         <section class="page" id="chapter-04">
             <div class="page-body">
                 <header class="page-top-header">
@@ -435,26 +515,32 @@ npm run dev</pre>
 
                 <h2 class="ch-title">04. Array &amp; Object Destructuring (ES6+)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">Destructuring គឺជា Syntax ក្នុង ES6+ សម្រាប់ទាញយកតម្លៃចេញពី <strong>Array</strong>
-                    ឬ <strong>Object</strong> មកផ្ទុកក្នុង Variables ដាច់ដោយឡែកយ៉ាងរហ័ស និងមានរបៀប។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Destructuring</strong> គឺជា Syntax ក្នុង ES6+ សម្រាប់ទាញយកតម្លៃចេញពី
+                    <strong>Array</strong> ឬ <strong>Object</strong> មកផ្ទុកក្នុង Variables ដាច់ដោយឡែកយ៉ាងរហ័ស
+                    និងមានរបៀប។
+                </p>
 
-                <p class="step-heading">2. Key Forms &amp; Roles (តួនាទីខ្វះមិនបានក្នុង React):</p>
-                <ul class="step-list">
-                    <li><strong>Array Destructuring (<code class="ic">[a, b] = arr</code>)៖</strong>
-                        ទាញយកធាតុតាមលំដាប់លំដោយ Index។ នេះជាគ្រឹះតែមួយគត់ដែល React ប្រើប្រាស់ក្នុងការបង្កើត State តាមរយៈ
-                        <code class="ic">const [data, setData] = useState()</code>។
-                    </li>
-                    <li><strong>Object Destructuring (<code class="ic">{ name } = obj</code>)៖</strong>
-                        ទាញយកទិន្នន័យតាមឈ្មោះ Key ផ្ទាល់ ប្រើសម្រាប់ទទួល Props ក្នុង Component កុំឱ្យសរសេរ <code
-                            class="ic">props.name</code> ផ្ទួនៗ។</li>
+                <p class="step-heading">2. មុខងារ និងទម្រង់សំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">const [a, b] = array</code> <strong>(Array Destructuring)៖</strong>
+                        ទាញយកធាតុតាមលំដាប់ Index (តែងប្រើជាមួយ <code class="ic">useState</code>)។</li>
+                    <li><code class="ic">const { key1, key2 } = obj</code> <strong>(Object Destructuring)៖</strong>
+                        ទាញយកតម្លៃតាមឈ្មោះ Key ផ្ទាល់ដោយមិនគិតលំដាប់ (តែងប្រើជាមួយ <code class="ic">Props</code>)។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើរាល់ពេលបង្កើត State ដោយ <code class="ic">useState</code> និងរាល់ពេលទទួល Props
-                    ក្នុង Functional Components។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ការអនុវត្តជាក់ស្តែងក្នុង React.js៖
+                    </p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>React Hooks៖</strong> <code class="ic">const [count, setCount] = useState(0)</code>
+                            បំបែកតម្លៃ State និង Setter Function។</li>
+                        <li><strong>Component Props៖</strong> <code class="ic">function Card({ title, price })</code>
+                            ជួយកុំឱ្យសរសេរ <code class="ic">props.title</code> ផ្ទួនៗ។</li>
+                    </ul>
+                </div>
 
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-com">// ១. Array Destructuring តាមលំដាប់លំដោយ Index</span>
 <span class="t-kw">const</span> tools = [<span class="t-str">"React"</span>, <span class="t-str">"Vite"</span>];
@@ -466,22 +552,14 @@ npm run dev</pre>
 <span class="t-kw">function</span> <span class="t-fn">Profile</span>() {
   <span class="t-kw">const</span> { fullName, skill } = teacher;
   <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">p</span>&gt;លោកគ្រូ &lt;<span class="t-tag">strong</span>&gt;{fullName}&lt;/<span class="t-tag">strong</span>&gt; បង្រៀន {skill} ជាមួយ {primaryTool} &amp;amp; {buildTool}&lt;/<span class="t-tag">p</span>&gt;
+    &lt;<span class="t-tag">p</span>&gt;លោកគ្រូ &lt;<span class="t-tag">strong</span>&gt;{fullName}&lt;/<span class="t-tag">strong</span>&gt; បង្រៀន {skill} ជាមួយ {primaryTool} &amp; {buildTool}&lt;/<span class="t-tag">p</span>&gt;
   );
 }
 
 <span class="t-kw">export default</span> Profile;</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">const [primaryTool, buildTool]</code> ចាប់យកតម្លៃ "React" និង "Vite" តាមលំដាប់។
-                    </li>
-                    <li><code class="ic">const { fullName, skill }</code> ចាប់យកតម្លៃតាមឈ្មោះ Key
-                        ដោយមិនខ្វល់ពីលំដាប់មុនក្រោយឡើយ។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">4. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -489,14 +567,14 @@ npm run dev</pre>
                         <div class="browser-url-bar">http://localhost:5173</div>
                     </div>
                     <div class="browser-canvas">
-                        <p style="margin:0; font-size:0.88rem; color:#0F172A;">
+                        <p style="margin:0; font-size:0.86rem; color:#0F172A;">
                             លោកគ្រូ <strong>លាត ប្រុស</strong> បង្រៀន React.js ជាមួយ React &amp; Vite
                         </p>
                     </div>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> Destructuring ធ្វើឱ្យកូដខ្លីស្អាត ដោយ Array Destructuring
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> Destructuring ធ្វើឱ្យកូដខ្លីស្អាត ដោយ Array Destructuring
                     ប្រើសម្រាប់ Hooks (<code class="ic">useState</code>) និង Object Destructuring ប្រើសម្រាប់ Props។
                 </div>
             </div>
@@ -508,67 +586,64 @@ npm run dev</pre>
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 8: CHAPTER 05 - REACT COMPONENTS (EXPORT & IMPORT)
-         ==================================================================== -->
+        ទំព័រ 8: CHAPTER 05 - REACT COMPONENTS (EXPORT & IMPORT)
+        ==================================================================== -->
         <section class="page" id="chapter-05">
             <div class="page-body">
                 <header class="page-top-header">
                     <a href="#toc">React.js</a>
-                    <span>05. React Components</span>
+                    <span>05. React Components (Export &amp; Import)</span>
                 </header>
 
                 <h2 class="ch-title">05. React Components (Export &amp; Import)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">React Component គឺជាអនុគមន៍ JavaScript ឯករាជ្យ (ឈ្មោះត្រូវផ្តើមដោយអក្សរធំ
-                    PascalCase) ដែលប្រគល់មកវិញនូវ JSX និងអាចភ្ជាប់គ្នារវាង File តាមរយៈ Export និង Import។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Component</strong> គឺជា ផ្នែកតូចៗនៃ Website ដែលយើងបង្កើតតែម្តង
+                    ប៉ុន្តែអាចយកទៅប្រើឡើងវិញបានច្រើនដង (Reusable) ដែលត្រូវបានសរសេរជាទម្រង់ Function របស់ JavaScript
+                    ដែលត្រឡប់ (Return)
+                    ជាកូដ JSX ដើម្បីបង្កើតជាផ្នែកណាមួយនៃផ្ទាំង UI (Navbar, Button, Card)។
+                </p>
 
-                <p class="step-heading">2. Key Types &amp; Roles (តួនាទី Export ទាំង ២ ប្រភេទ):</p>
-                <ul class="step-list">
-                    <li><strong>Default Export (<code class="ic">export default App;</code>)៖</strong> ក្នុងមួយ File
-                        មានបានតែមួយគត់ ពេល Import ចូល មិនបាច់ប្រើសញ្ញាខ្នងក្រពើ <code class="ic">{ }</code> ឡើយ។</li>
-                    <li><strong>Named Export (<code class="ic">export function Btn()</code>)៖</strong> ក្នុងមួយ File
-                        អាចមានច្រើន ពេល Import ចូល ត្រូវតែដាក់ក្នុងសញ្ញា <code class="ic">{ Btn }</code> ជាដាច់ខាត។</li>
-                    <li><strong>PascalCase Convention៖</strong> ឈ្មោះ Component ត្រូវសរសេរអក្សរធំនៅខាងដើមជានិច្ច (ដូចជា
-                        <code class="ic">Navbar</code> មិនមែន <code class="ic">navbar</code> ទេ) ដើម្បីកុំឱ្យច្រឡំជាមួយ
-                        HTML Tags ធម្មតា។
+                <p class="step-heading">2. មុខងារ និងច្បាប់សំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><strong>PascalCase Naming៖</strong> ឈ្មោះ Component ត្រូវតែផ្តើមដោយ <strong>អក្សរធំ (Capital
+                            Letter)</strong> ជានិច្ច ដូចជា <code class="ic">Navbar</code>, <code
+                            class="ic">ProductCard</code> ដើម្បីឱ្យ React ស្គាល់ថាជា Component មិនមែន HTML Tag។</li>
+                    <li><strong>Component Composition៖</strong> ការយក Component តូចៗទៅហៅប្រើនៅខាងក្នុង Component
+                        ធំមួយទៀត ដូចជា <code class="ic">&lt;Header /&gt;</code> នៅក្នុង <code class="ic">App.jsx</code>។
                     </li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើសម្រាប់បំបែក UI នៃគេហទំព័រឱ្យទៅជាឯកសារដាច់ដោយឡែកៗពីគ្នា ងាយស្រួលថែទាំ។</p>
-
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
-                <div class="code-box">
-                    <pre><span class="t-com">// ១. ឯកសារ src/components/Buttons.jsx (Named Export)</span>
-<span class="t-kw">export function</span> <span class="t-fn">DangerBtn</span>() {
-  <span class="t-kw">return</span> &lt;<span class="t-tag">button</span> <span class="t-attr">style</span>={{ background: <span class="t-str">'#DC2626'</span>, color: <span class="t-str">'#fff'</span>, border: 0, padding: <span class="t-str">'6px 12px'</span>, borderRadius: <span class="t-str">'4px'</span> }}&gt;លុប&lt;/<span class="t-tag">button</span>&gt;;
-}
-
-<span class="t-com">// ២. ឯកសារ src/App.jsx (Default Export)</span>
-<span class="t-kw">import</span> { DangerBtn } <span class="t-kw">from</span> <span class="t-str">'./components/Buttons'</span>;
-
-<span class="t-kw">function</span> <span class="t-fn">App</span>() {
-  <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">div</span> <span class="t-attr">style</span>={{ display: <span class="t-str">'flex'</span>, gap: <span class="t-str">'10px'</span>, alignItems: <span class="t-str">'center'</span> }}&gt;
-      &lt;<span class="t-tag">span</span>&gt;តើអ្នកចង់លុបទិន្នន័យនេះមែនទេ?&lt;/<span class="t-tag">span</span>&gt;
-      &lt;<span class="t-tag">DangerBtn</span> /&gt;
-    &lt;/<span class="t-tag">div</span>&gt;
-  );
-}
-
-<span class="t-kw">export default</span> App;</pre>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ការ Export មាន ២ ប្រភេទ៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>Default Export៖</strong>
+                            ប្រើសម្រាប់បញ្ជូន Component គោលតែមួយចេញពីឯកសារ ហើយពេល <code class="ic">import</code>
+                            អាចដាក់ឈ្មោះអ្វីក៏បានដោយមិនបាច់ប្រើ <code class="ic">{ }</code>។</li>
+                        <li><strong>Named Export៖</strong>
+                            ប្រើសម្រាប់បញ្ជូន Component ឬ Function ច្រើនចេញពីឯកសារតែមួយ ហើយពេល <code
+                                class="ic">import</code> ត្រូវដាក់ក្នុង <code class="ic">{ Name }</code> ឱ្យដូចឈ្មោះដើម។
+                        </li>
+                    </ul>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">DangerBtn</code> ត្រូវហៅចូលជាមួយ <code class="ic">{ DangerBtn }</code>
-                        ព្រោះវាជា Named Export។</li>
-                    <li><code class="ic">export default App;</code> នៅបាតក្រោមឯកសារ អនុញ្ញាតឱ្យ <code
-                            class="ic">main.jsx</code> ទាញយកទៅ Render។</li>
-                </ul>
+                <p class="step-heading">3. Syntax (ការបង្កើត Export និង Import Component):</p>
+                <div class="code-box">
+                    <pre><span class="t-com">// ១. ឯកសារ Header.jsx (បង្កើត និង Export Component)</span>
+<span class="t-kw">export function</span> <span class="t-fn">Badge</span>() {
+  <span class="t-kw">return</span> &lt;<span class="t-tag">span</span>&gt;✨ វគ្គសិក្សាថ្មី&lt;/<span class="t-tag">span</span>&gt;;
+}
 
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+<span class="t-kw">function</span> <span class="t-fn">Header</span>() {
+  <span class="t-kw">return</span> &lt;<span class="t-tag">h3</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, margin: <span class="t-str">'0 0 4px'</span> }}&gt;Bros Like Teaching Academy&lt;/<span class="t-tag">h3</span>&gt;;
+}
+<span class="t-kw">export default</span> Header;
+
+<span class="t-com">// ២. ឯកសារ App.jsx (Import មកប្រើប្រាស់)</span>
+<span class="t-kw">import</span> Header, { Badge } <span class="t-kw">from</span> <span class="t-str">'./Header.jsx'</span>;</pre>
+                </div>
+
+                <p class="step-heading">4. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -576,18 +651,18 @@ npm run dev</pre>
                         <div class="browser-url-bar">http://localhost:5173</div>
                     </div>
                     <div class="browser-canvas">
-                        <div style="display:flex; gap:10px; align-items:center;">
-                            <span style="font-size:0.86rem; color:#0F172A;">តើអ្នកចង់លុបទិន្នន័យនេះមែនទេ?</span>
-                            <button
-                                style="background:#DC2626; color:#fff; border:0; padding:5px 12px; border-radius:4px; font-size:0.82rem; cursor:pointer;">លុប</button>
-                        </div>
+                        <h3 style="color:#0284C7; font-size:1rem; margin:0 0 4px; font-weight:700;">Bros Like Teaching
+                            Academy</h3>
+                        <span
+                            style="display:inline-block; background:#E0F2FE; color:#0369A1; font-size:0.78rem; font-weight:600; padding:2px 8px; border-radius:4px;">✨
+                            វគ្គសិក្សាថ្មី</span>
                     </div>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> Components ត្រូវសរសេរអក្សរធំនៅដើម PascalCase
-                    ហើយការបែងចែកឯកសារត្រូវប្រើ <code class="ic">export default</code> សម្រាប់តួមេ និង <code
-                        class="ic">export</code> សម្រាប់តួកូន។
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> Component គឺសំដៅទៅលើផ្នែកតូចៗនៃ Website
+                    ដែលយើងអាចហៅប្រើបានច្រើនដង ហើយសរសេរជាទម្រង់ Function ចំពោះឈ្មោះរបស់វាត្រូវផ្តើមដោយអក្សរធំជានិច្ច
+                    (<code class="ic">PascalCase</code>)។
                 </div>
             </div>
 
@@ -598,8 +673,8 @@ npm run dev</pre>
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 9: CHAPTER 06 - PROPS
-         ==================================================================== -->
+        ទំព័រ 9: CHAPTER 06 - PROPS
+        ==================================================================== -->
         <section class="page" id="chapter-06">
             <div class="page-body">
                 <header class="page-top-header">
@@ -609,31 +684,39 @@ npm run dev</pre>
 
                 <h2 class="ch-title">06. Props (Component Communication)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">Props (Properties) គឺជាយន្តការសម្រាប់បញ្ជូនទិន្នន័យពី Component មេ (Parent)
-                    ចុះទៅកាន់ Component កូន (Child) ក្នុងទិសដៅតែមួយ (Unidirectional Data Flow)។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Props (Properties)</strong> គឺជាការបញ្ជូនទិន្នន័យពី Component មេ
+                    (Parent) ទៅកាន់ Component កូន (Child)។</p>
 
-                <p class="step-heading">2. Key Rules &amp; Roles (ច្បាប់តឹងរ៉ឹងនៃ Props):</p>
-                <ul class="step-list">
-                    <li><strong>Read-Only (ហាមកែប្រែតម្លៃ)៖</strong> ធាតុកូនមានសិទ្ធិត្រឹមតែអានយកទិន្នន័យ Props
-                        មកបង្ហាញប៉ុណ្ណោះ ហាមកែប្រែតម្លៃ Props ដោយផ្ទាល់ជាដាច់ខាត។</li>
-                    <li><strong>Pass via Attributes (បញ្ជូនដូច Attribute)៖</strong> បញ្ជូនទិន្នន័យតាមឈ្មោះ Property
-                        ដូចជា <code class="ic">title="React"</code> ឬ <code class="ic">isOnline={true}</code>។</li>
-                    <li><strong>Receive via Destructuring (ទទួលតាម {})៖</strong> បំបែក Props ក្នុង Parameter
-                        នៃអនុគមន៍កូនភ្លាមៗ ដើម្បីកូដខ្លី និងងាយស្រួលមើល។</li>
+                <p class="step-heading">2. មុខងារ និងច្បាប់សំខាន់ៗនៃ Props:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><strong>Pass via Attributes៖</strong> បញ្ជូនទិន្នន័យពី Parent តាមឈ្មោះ Property ដូចជា <code
+                            class="ic">name="សុខា"</code> ឬ <code class="ic">isOnline={true}</code>។</li>
+                    <li><strong>Receive via Destructuring៖</strong> ទទួលទិន្នន័យក្នុង Child Component តាម <code
+                            class="ic">function Child({ name, role })</code>។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើនៅពេលដែលយើងចង់ឱ្យ Component តែមួយ (ដូចជា UserCard ឬ Button) អាចបង្ហាញព័ត៌មាន
-                    និងរូបរាងខុសៗគ្នាតាមការបញ្ជូនទិន្នន័យពីខាងក្រៅ។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">គោលការណ៍ស្នូលរបស់ Props៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>Read-Only (Immutability)៖</strong> ធាតុកូនមានសិទ្ធិត្រឹមតែអានយក Props
+                            មកបង្ហាញប៉ុណ្ណោះ ហាមកែប្រែតម្លៃ Props ដោយផ្ទាល់។</li>
+                        <li><strong>Data Types៖</strong> អាចបញ្ជូន String, Number, Boolean, Array, Object ហើយសូម្បីតែ
+                            Function ក៏អាចបញ្ជូនទៅបាន។</li>
+                    </ul>
+                </div>
+
+                <p class="step-heading">3. ប្រើពេលណា (When to Use):</p>
+                <p class="step-text">ប្រើនៅពេលដែលយើងចង់ប្រើប្រាស់ Component ដដែលឡើងវិញ (Reusable)
+                    ប៉ុន្តែឱ្យវាបង្ហាញទិន្នន័យ ឬព័ត៌មានខុសៗគ្នា។</p>
 
                 <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-com">// Component កូន (ទទួល Props តាមរយៈ Destructuring)</span>
 <span class="t-kw">function</span> <span class="t-fn">UserBadge</span>({ name, role, isOnline }) {
   <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">div</span> <span class="t-attr">style</span>={{ border: <span class="t-str">'1px solid #E2E8F0'</span>, padding: <span class="t-str">'8px 12px'</span>, borderRadius: <span class="t-str">'6px'</span>, background: <span class="t-str">'#F8FAFC'</span> }}&gt;
-      &lt;<span class="t-tag">strong</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span> }}&gt;{name}&lt;/<span class="t-tag">strong</span>&gt; - {role} | ស្ថានភាព៖ {isOnline ? <span class="t-str">"🟢 Online"</span> : <span class="t-str">"⚪ Offline"</span>}
+    &lt;<span class="t-tag">div</span>&gt;
+      &lt;<span class="t-tag">strong</span>&gt;{name}&lt;/<span class="t-tag">strong</span>&gt; - {role} | ស្ថានភាព៖ {isOnline ? <span class="t-str">"🟢 Online"</span> : <span class="t-str">"⚪ Offline"</span>}
     &lt;/<span class="t-tag">div</span>&gt;
   );
 }
@@ -641,25 +724,15 @@ npm run dev</pre>
 <span class="t-com">// Component មេ (បញ្ជូន Props)</span>
 <span class="t-kw">function</span> <span class="t-fn">App</span>() {
   <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">div</span> <span class="t-attr">style</span>={{ display: <span class="t-str">'flex'</span>, flexDirection: <span class="t-str">'column'</span>, gap: <span class="t-str">'8px'</span> }}&gt;
-      &lt;<span class="t-tag">UserBadge</span> <span class="t-attr">name</span>=<span class="t-str">"លាត ប្រុស"</span> <span class="t-attr">role</span>=<span class="t-str">"Instructor"</span> <span class="t-attr">isOnline</span>={true} /&gt;
-      &lt;<span class="t-tag">UserBadge</span> <span class="t-attr">name</span>=<span class="t-str">"សុខា"</span> <span class="t-attr">role</span>=<span class="t-str">"Student"</span> <span class="t-attr">isOnline</span>={false} /&gt;
+    &lt;<span class="t-tag">div</span>&gt;
+      &lt;<span class="t-tag">UserBadge</span> <span class="t-attr">name</span>=<span class="t-str">"លាត ប្រុស"</span> <span class="t-attr">role</span>=<span class="t-str">"Instructor"</span> <span class="t-attr">isOnline</span>={<span class="t-kw">true</span>} /&gt;
+      &lt;<span class="t-tag">UserBadge</span> <span class="t-attr">name</span>=<span class="t-str">"សុខា"</span> <span class="t-attr">role</span>=<span class="t-str">"Student"</span> <span class="t-attr">isOnline</span>={<span class="t-kw">false</span>} /&gt;
     &lt;/<span class="t-tag">div</span>&gt;
   );
-}
-
-<span class="t-kw">export default</span> App;</pre>
+}</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">{ name, role, isOnline }</code> ចាប់យក Properties ពី Object Props ដោយផ្ទាល់។
-                    </li>
-                    <li>តម្លៃជា Boolean ឬ Number ត្រូវដាក់ក្នុងសញ្ញា <code class="ic">{ }</code> ដូចជា <code
-                            class="ic">isOnline={true}</code>។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">5. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -667,13 +740,13 @@ npm run dev</pre>
                         <div class="browser-url-bar">http://localhost:5173</div>
                     </div>
                     <div class="browser-canvas">
-                        <div style="display:flex; flex-direction:column; gap:6px; font-size:0.84rem;">
+                        <div style="display:flex; flex-direction:column; gap:5px; font-size:0.82rem;">
                             <div
-                                style="border:1px solid #E2E8F0; padding:6px 10px; border-radius:4px; background:#F8FAFC;">
+                                style="border:1px solid #E2E8F0; padding:5px 10px; border-radius:4px; background:#F8FAFC;">
                                 <strong style="color:#0284C7;">លាត ប្រុស</strong> - Instructor | ស្ថានភាព៖ 🟢 Online
                             </div>
                             <div
-                                style="border:1px solid #E2E8F0; padding:6px 10px; border-radius:4px; background:#F8FAFC;">
+                                style="border:1px solid #E2E8F0; padding:5px 10px; border-radius:4px; background:#F8FAFC;">
                                 <strong style="color:#0284C7;">សុខា</strong> - Student | ស្ថានភាព៖ ⚪ Offline
                             </div>
                         </div>
@@ -681,8 +754,8 @@ npm run dev</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> Props បញ្ជូនទិន្នន័យពីមេទៅកូនក្នុងទម្រង់ Read-Only
-                    ដើម្បីឱ្យ Component អាច Re-use បង្ហាញទិន្នន័យច្រើនបែបបានយ៉ាងមានប្រសិទ្ធភាព។
+                    <strong>6. Summary (សង្ខេបមេរៀន)៖</strong> Props គឺជាការបញ្ជូនទិន្នន័យពី Component មេ ទៅ Component
+                    កូន ដើម្បីឱ្យ Component កូនអាចបង្ហាញទិន្នន័យខុសៗគ្នាបាន។
                 </div>
             </div>
 
@@ -704,73 +777,66 @@ npm run dev</pre>
 
                 <h2 class="ch-title">07. State and useState Hook</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">State គឺជាអង្គចងចាំផ្ទៃក្នុងរបស់ Component
-                    សម្រាប់ផ្ទុកទិន្នន័យដែលអាចផ្លាស់ប្តូរបាន។ នៅពេល State ប្តូរតម្លៃ វានឹងបញ្ជាឱ្យ React ធ្វើការ
-                    Re-render UI ឡើងវិញស្វ័យប្រវត្តិ។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text">
+                    <strong>React Hooks</strong> គឺជា Functions ពិសេសដែលភ្ជាប់មកស្រាប់ក្នុង React សម្រាប់អនុញ្ញាតឱ្យ
+                    <strong>Functional Component</strong> អាចគ្រប់គ្រងទិន្នន័យ (State) ដែលធ្វើឱ្យ Component អាច
+                    Re-render បាន ដោយមិនចាំបាច់សរសេរជា Class Component ឡើយ។ Hooks
+                    សំខាន់ៗដែលគេនិយមប្រើរួមមាន <code class="ic">useState()</code>, <code class="ic">useEffect()</code>,
+                    <code class="ic">useRef()</code> និង <code class="ic">useReducer()</code>។
+                </p>
 
-                <p class="step-heading">2. Key Parts &amp; Roles (តួមេនៃ useState):</p>
-                <ul class="step-list">
-                    <li><strong>Variable (<code class="ic">count</code>)៖</strong> តម្លៃបច្ចុប្បន្ននៃ State
-                        សម្រាប់យកទៅបង្ហាញលើ UI។</li>
-                    <li><strong>Setter Function (<code class="ic">setCount</code> - ខ្វះមិនបាន)៖</strong>
-                        អនុគមន៍តែមួយគត់ដែលប្រើសម្រាប់ផ្លាស់ប្តូរតម្លៃ State និងបញ្ជាឱ្យ Re-render (ហាមកែតម្លៃ <code
-                            class="ic">count = count + 1</code> ដោយផ្ទាល់)។</li>
-                    <li><strong>Initial State (<code class="ic">useState(0)</code>)៖</strong>
-                        តម្លៃចាប់ផ្តើមដំបូងបង្អស់ពេល Component បង្ហាញខ្លួន។</li>
+                <p class="step-heading">2. មុខងារ និងធាតុផ្សំសំខាន់ៗនៃ useState:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">import { useState } from 'react'</code> <strong>(នាំចូល Hook)៖</strong> ទាញយក
+                        <code class="ic">useState</code> ពីបណ្ណាល័យ React មកប្រើប្រាស់។
+                    </li>
+                    <li><code class="ic">const [count, setCount] = useState(0)</code> <strong>(ប្រកាស State)៖</strong>
+                        បង្កើតអថេរផ្ទុកទិន្នន័យ និង Function សម្រាប់កែប្រែតម្លៃដោយកំណត់តម្លៃដើម <code
+                            class="ic">0</code>។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើសម្រាប់គ្រប់ទិន្នន័យដែលមានអន្តរកម្មដូចជា៖ ចំនួនចុច Counter, ការបើក/បិទ
-                    Dropdown, និងទិន្នន័យក្នុងប្រអប់ Form។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">សមាសធាតុទាំង ៣ របស់ useState៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>State Variable (<code class="ic">count</code>)៖</strong>
+                            អថេរសម្រាប់ផ្ទុកតម្លៃបច្ចុប្បន្ន និងយកទៅបង្ហាញលើអេក្រង់ (UI)។</li>
+                        <li><strong>Setter Function (<code class="ic">setCount</code>)៖</strong>
+                            Function សម្រាប់ផ្លាស់ប្តូរតម្លៃ State និងបញ្ជាឱ្យ Component ធ្វើការ Re-render (ហាមកែ <code
+                                class="ic">count = 1</code> ដោយផ្ទាល់)។</li>
+                        <li><strong>Initial Value (<code class="ic">0</code>)៖</strong> តម្លៃចាប់ផ្តើមដំបូងបង្អស់នៅពេល
+                            Component បើកដំណើរការ។</li>
+                    </ul>
+                </div>
+
+                <p class="step-heading">3. ប្រើពេលណា (When to Use):</p>
+                <p class="step-text">ប្រើរាល់ពេលដែលចង់យកតម្លៃទៅបង្ហាញលើផ្ទាំង UI (អាចគិតថាវាដូចជា Variable ពិសេសបាន)។
+                </p>
 
                 <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">import</span> { useState } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
 
 <span class="t-kw">function</span> <span class="t-fn">Counter</span>() {
-  <span class="t-kw">const</span> [count, setCount] = <span class="t-fn">useState</span>(0);
+  <span class="t-kw">const</span> [count, setCount] = <span class="t-fn">useState</span>(<span class="t-num">0</span>);
 
   <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">div</span> <span class="t-attr">style</span>={{ padding: <span class="t-str">'10px'</span> }}&gt;
-      &lt;<span class="t-tag">h3</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, margin: <span class="t-str">'0 0 6px'</span> }}&gt;ចំនួនចុច៖ {count}&lt;/<span class="t-tag">h3</span>&gt;
-      &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setCount</span>(count + 1)} <span class="t-attr">style</span>={{ padding: <span class="t-str">'5px 12px'</span>, background: <span class="t-str">'#0284C7'</span>, color: <span class="t-str">'#fff'</span>, border: 0, borderRadius: <span class="t-str">'4px'</span>, marginRight: <span class="t-str">'6px'</span> }}&gt;បន្ថែម +1&lt;/<span class="t-tag">button</span>&gt;
-      &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setCount</span>(0)} <span class="t-attr">style</span>={{ padding: <span class="t-str">'5px 12px'</span>, background: <span class="t-str">'#64748B'</span>, color: <span class="t-str">'#fff'</span>, border: 0, borderRadius: <span class="t-str">'4px'</span> }}&gt;កំណត់ឡើងវិញ&lt;/<span class="t-tag">button</span>&gt;
+    &lt;<span class="t-tag">div</span>&gt;
+      &lt;<span class="t-tag">h3</span>&gt;ចំនួនចុច៖ {count}&lt;/<span class="t-tag">h3</span>&gt;
+      &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setCount</span>(count + <span class="t-num">1</span>)}&gt;បន្ថែម +1&lt;/<span class="t-tag">button</span>&gt;
+      &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setCount</span>(<span class="t-num">0</span>)}&gt;កំណត់ឡើងវិញ&lt;/<span class="t-tag">button</span>&gt;
     &lt;/<span class="t-tag">div</span>&gt;
   );
-}
-
-<span class="t-kw">export default</span> Counter;</pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">const [count, setCount] = useState(0)</code> ប្រើ Array Destructuring បង្កើត
-                        State តម្លៃ 0។</li>
-                    <li><code class="ic">setCount(count + 1)</code> ផ្លាស់ប្តូរតម្លៃ និងបញ្ជាឱ្យ React គូស UI
-                        ថ្មីភ្លាមៗ។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <h3 style="color:#0284C7; font-size:1.05rem; margin:0 0 6px;">ចំនួនចុច៖ 1</h3>
-                        <button
-                            style="padding:4px 10px; background:#0284C7; color:#fff; border:0; border-radius:4px; font-size:0.82rem; margin-right:6px;">បន្ថែម
-                            +1</button>
-                        <button
-                            style="padding:4px 10px; background:#64748B; color:#fff; border:0; border-radius:4px; font-size:0.82rem;">កំណត់ឡើងវិញ</button>
-                    </div>
+}</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> State គ្រប់គ្រងទិន្នន័យមានចលនា
-                    ហើយត្រូវផ្លាស់ប្តូរតម្លៃតាមរយៈ Setter Function ជានិច្ចដើម្បីឱ្យ UI ធ្វើបច្ចុប្បន្នភាពតាម។
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong><br>
+                    - <strong>React Hooks៖</strong> គឺជា Functions ពិសេសដែលអនុញ្ញាតឱ្យ Functional Component អាចគ្រប់គ្រង
+                    State និងមុខងារផ្សេងៗរបស់ React បានដោយផ្ទាល់។<br>
+                    - <strong><code class="ic">useState</code>៖</strong> ប្រើសម្រាប់ផ្ទុកទិន្នន័យ (Variable ពិសេស)
+                    និងធ្វើឱ្យ Component អាច Re-render ផ្ទាំង UI ឡើងវិញដោយស្វ័យប្រវត្តិ នៅពេលកែប្រែតម្លៃតាមរយៈ Setter
+                    Function។
                 </div>
             </div>
 
@@ -792,72 +858,76 @@ npm run dev</pre>
 
                 <h2 class="ch-title">08. Event Handling (Synthetic Events)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">Event Handling គឺជាការឆ្លើយតបទៅនឹងសកម្មភាពរបស់អ្នកប្រើប្រាស់ (ដូចជាការចុច Click
-                    ឬការវាយអត្ថបទ) ដោយប្រើប្រាស់ Synthetic Events របស់ React តាមទម្រង់ camelCase។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Event Handling</strong> គឺជាការឆ្លើយតបទៅនឹងសកម្មភាពរបស់អ្នកប្រើប្រាស់
+                    (ដូចជាការចុច Click ឬការវាយអត្ថបទ) នៅលើផ្ទាំង UI របស់ React។</p>
 
-                <p class="step-heading">2. Key Rules &amp; Roles (ភាពខុសគ្នារវាង HTML និង React Events):</p>
-                <ul class="step-list">
-                    <li><strong>camelCase Convention (សរសេរអក្សរផ្សំធំ)៖</strong> ប្រើ <code class="ic">onClick</code>
-                        ជំនួស <code class="ic">onclick</code> និង <code class="ic">onChange</code> ជំនួស <code
-                            class="ic">onchange</code>។</li>
-                    <li><strong>Pass as Function (បញ្ជូនជាអនុគមន៍)៖</strong> បញ្ជូនជា Function Reference <code
-                            class="ic">onClick={handleClick}</code> (ហាមដាក់វង់ក្រចក <code
-                            class="ic">onClick={handleClick()}</code> ព្រោះវានឹងដំណើរការភ្លាមៗពេលទំព័រមិនទាន់ទាំងចុច)។
-                    </li>
-                    <li><strong>Event Object (<code class="ic">e.target.value</code>)៖</strong>
-                        ចាប់យកតម្លៃដែលអ្នកប្រើកំពុងវាយចេញពីប្រអប់ Input ភ្លាមៗ។</li>
+                <p class="step-heading">2. មុខងារ និងច្បាប់សំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">onClick={handleClick}</code> <strong>(Click Event)៖</strong>
+                        ចាប់ព្រឹត្តិការណ៍ពេលចុចប៊ូតុង ដោយបញ្ជូនជា Function Reference។</li>
+                    <li><code class="ic">onChange={(e) =&gt; ...}</code> <strong>(Change Event)៖</strong>
+                        ចាប់ព្រឹត្តិការណ៍ពេលតម្លៃក្នុង Input មានការផ្លាស់ប្តូរ។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើលើគ្រប់ប៊ូតុង ប្រអប់បញ្ចូលអត្ថបទ និងការចុច Submit Form លើគេហទំព័រ។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ការបំបែកសមាសធាតុនៃ Event Object
+                        (<code class="ic">e.target.value</code>)៖</p>
+                    <ul class="step-list" style="margin-top: 0; margin-bottom: 4px;">
+                        <li><strong><code class="ic">e</code> (Event Object)៖</strong>
+                            កញ្ចប់ព័ត៌មាននៃព្រឹត្តិការណ៍ដែល React បង្កើត និងបញ្ជូនមកឱ្យ Function
+                            ដោយស្វ័យប្រវត្តិពេលមានព្រឹត្តិការណ៍កើតឡើង។</li>
+                        <li><strong><code class="ic">.target</code> (Target Element)៖</strong>
+                            សំដៅទៅលើធាតុ HTML ជាក់លាក់ដែលអ្នកប្រើប្រាស់កំពុងធ្វើសកម្មភាពលើវាផ្ទាល់។</li>
+                        <li><strong><code class="ic">.value</code> (Input Value)៖</strong>
+                            ប្រើសម្រាប់ចាប់តម្លៃដែលអ្នកប្រើប្រាស់បានវាយបញ្ចូលនៅក្នុង <code class="ic">.target</code>
+                            នោះ។</li>
+                    </ul>
 
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ចំណុចសម្គាល់សំខាន់ៗក្នុង React
+                        Events៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>camelCase Convention៖</strong> សរសេរ <code class="ic">onClick</code>, <code
+                                class="ic">onChange</code>, <code class="ic">onSubmit</code> ជំនួសអក្សរតូចទាំងអស់របស់
+                            HTML។</li>
+                        <li><strong><code class="ic">e.preventDefault()</code>៖</strong> ប្រើនៅក្នុង <code
+                                class="ic">onSubmit</code> ដើម្បីការពារកុំឱ្យ Form ធ្វើការ Refresh ទំព័រទាំងមូល។</li>
+                        <li><strong>ហាមដាក់វង់ក្រចក <code class="ic">()</code> នៅចុងឈ្មោះ Function៖</strong> ត្រូវសរសេរ
+                            <code class="ic">onClick={handleClick}</code> ជំនួសឱ្យ <code class="ic">handleClick()</code>
+                            ព្រោះការដាក់ <code class="ic">()</code> នឹងធ្វើឱ្យ Function
+                            ដំណើរការភ្លាមៗដោយស្វ័យប្រវត្តិពេល Component Render ដោយមិនរង់ចាំអ្នកប្រើចុច (និងអាចបង្កជា
+                            Infinite Loop ប្រសិនបើមានការកែប្រែ State)។
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">import</span> { useState } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
 
 <span class="t-kw">function</span> <span class="t-fn">InputLogger</span>() {
   <span class="t-kw">const</span> [text, setText] = <span class="t-fn">useState</span>(<span class="t-str">""</span>);
 
+  <span class="t-com">// របៀបទី 1៖ បង្កើត Function ផ្សេង រួចហៅឈ្មោះមកប្រើ</span>
+  <span class="t-kw">const</span> <span class="t-fn">handleChange</span> = (e) =&gt; <span class="t-fn">setText</span>(e.target.value);
+
   <span class="t-kw">return</span> (
     &lt;<span class="t-tag">div</span>&gt;
-      &lt;<span class="t-tag">input</span> 
-        <span class="t-attr">type</span>=<span class="t-str">"text"</span> 
-        <span class="t-attr">placeholder</span>=<span class="t-str">"វាយអត្ថបទទីនេះ..."</span> 
-        <span class="t-attr">onChange</span>={(e) =&gt; <span class="t-fn">setText</span>(e.target.value)} 
-      /&gt;
+      &lt;<span class="t-tag">input</span> <span class="t-attr">type</span>=<span class="t-str">"text"</span> <span class="t-attr">placeholder</span>=<span class="t-str">"វាយអត្ថបទទីនេះ..."</span> <span class="t-attr">onChange</span>={handleChange} /&gt;
+
+      <span class="t-com">{/* របៀបទី 2៖ សរសេរ Arrow Function នៅលើ Event ផ្ទាល់ */}</span>
+      &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setText</span>(<span class="t-str">""</span>)} <span class="t-attr">style</span>={{ marginLeft: <span class="t-str">'6px'</span> }}&gt;សម្អាត&lt;/<span class="t-tag">button</span>&gt;
+
       &lt;<span class="t-tag">p</span>&gt;អក្សរដែលអ្នកវាយ៖ &lt;<span class="t-tag">strong</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span> }}&gt;{text}&lt;/<span class="t-tag">strong</span>&gt;&lt;/<span class="t-tag">p</span>&gt;
     &lt;/<span class="t-tag">div</span>&gt;
   );
-}
-
-<span class="t-kw">export default</span> InputLogger;</pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">onChange={(e) =&gt; setText(e.target.value)}</code>
-                        ចាប់យករាល់តួអក្សរដែលវាយបញ្ចូលទៅផ្ទុកក្នុង State <code class="ic">text</code> ភ្លាមៗ។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <input type="text" value="សួស្តីលោកគ្រូ" readOnly
-                            style="border:1px solid #CBD5E1; padding:4px 8px; border-radius:4px; font-size:0.82rem;">
-                        <p style="margin:6px 0 0; font-size:0.86rem; color:#0F172A;">អក្សរដែលអ្នកវាយ៖ <strong
-                                style="color:#0284C7;">សួស្តីលោកគ្រូ</strong></p>
-                    </div>
+}</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> Events ក្នុង React សរសេរជា camelCase និងបញ្ជូនជា Function
-                    Callback ដោយប្រើ <code class="ic">e.target.value</code> សម្រាប់ចាប់យកតម្លៃពីប្រអប់ Input។
+                    <strong>4. Summary (សង្ខេបមេរៀន)៖</strong> Events ក្នុង React សរសេរជា camelCase ហើយបញ្ជូនជា Function
+                    Reference ឬ Arrow Function។ ប្រើ <code class="ic">e.target.value</code> ដើម្បីចាប់តម្លៃពី Input និង
+                    <code class="ic">e.preventDefault()</code> ដើម្បីការពារការ Refresh Form។
                 </div>
             </div>
 
@@ -879,70 +949,54 @@ npm run dev</pre>
 
                 <h2 class="ch-title">09. Conditional Rendering</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">Conditional Rendering គឺជាការសម្រេចចិត្តបង្ហាញ ឬលាក់ធាតុ UI
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Conditional Rendering</strong> គឺជាការសម្រេចចិត្តបង្ហាញ ឬលាក់ធាតុ UI
                     ណាមួយដោយផ្អែកលើលក្ខខណ្ឌពិត (<code class="ic">true</code>) ឬមិនពិត (<code class="ic">false</code>) នៃ
                     State ឬ Props។</p>
 
-                <p class="step-heading">2. Key Operators &amp; Roles (វិធីសាស្ត្រស្នូលទាំង ២):</p>
+                <p class="step-heading">2. មុខងារ និង Operators សំខាន់ៗ:</p>
                 <ul class="step-list">
-                    <li><strong>Ternary Operator (<code class="ic">condition ? A : B</code>)៖</strong> ប្រើពេលមានជម្រើស
-                        ២ ផ្ទុយគ្នា (ឧ. បើ Login ហើយ បង្ហាញប៊ូតុង "Logout" បើមិនទាន់ Login បង្ហាញ "Login")។</li>
-                    <li><strong>Logical AND Operator (<code class="ic">condition &amp;&amp; A</code>)៖</strong>
-                        ប្រើពេលចង់បង្ហាញធាតុ A លុះត្រាតែលក្ខខណ្ឌពិត (បើមិនពិត គឺមិនបង្ហាញអ្វីទាំងអស់)។</li>
+                    <li><code class="ic">{ condition ? &lt;A /&gt; : &lt;B /&gt; }</code> <strong>(Ternary
+                            Operator)៖</strong> បង្ហាញ UI ពីរផ្ទុយគ្នាអាស្រ័យលើលក្ខខណ្ឌពិត ឬមិនពិត។</li>
+                    <li><code class="ic">{ condition && &lt;A /&gt; }</code> <strong>(Logical AND)៖</strong>
+                        បង្ហាញធាតុ A លុះត្រាតែលក្ខខណ្ឌពិត (បើមិនពិត មិនបង្ហាញអ្វីទាំងអស់)។</li>
+                    <li><code class="ic">{ data ?? "តម្លៃជំនួស" }</code> <strong>(Nullish Coalescing)៖</strong>
+                        បង្ហាញតម្លៃជំនួស ប្រសិនបើ <code class="ic">data</code> មានតម្លៃ <code class="ic">null</code> ឬ
+                        <code class="ic">undefined</code>។
+                    </li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើសម្រាប់ផ្ទាំងផ្ទៀងផ្ទាត់សិទ្ធិ User, បង្ហាញសញ្ញា "កំពុងដំណើរការ (Loading...)"
-                    និងការបង្ហាញសារជូនដំណឹងពេល Error។</p>
-
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">import</span> { useState } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
 
-<span class="t-kw">function</span> <span class="t-fn">AuthStatus</span>() {
+<span class="t-kw">function</span> <span class="t-fn">AuthStatus</span>({ username }) {
   <span class="t-kw">const</span> [isLoggedIn, setIsLoggedIn] = <span class="t-fn">useState</span>(<span class="t-kw">true</span>);
 
   <span class="t-kw">return</span> (
     &lt;<span class="t-tag">div</span>&gt;
+      <span class="t-com">{/* 1. ប្រើ Nullish Coalescing (??) បង្ហាញតម្លៃជំនួសពេលទទេ */}</span>
+      &lt;<span class="t-tag">p</span>&gt;សួស្តី៖ {username ?? <span class="t-str">"ភ្ញៀវ (Guest)"</span>}&lt;/<span class="t-tag">p</span>&gt;
+
+      <span class="t-com">{/* 2. ប្រើ Ternary Operator (? :) ជ្រើសរើសប៊ូតុង */}</span>
       {isLoggedIn ? (
-        &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setIsLoggedIn</span>(<span class="t-kw">false</span>)} <span class="t-attr">style</span>={{ background: <span class="t-str">'#DC2626'</span>, color: <span class="t-str">'#fff'</span>, border: 0, padding: <span class="t-str">'5px 12px'</span>, borderRadius: <span class="t-str">'4px'</span> }}&gt;ចាកចេញ (Logout)&lt;/<span class="t-tag">button</span>&gt;
+        &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setIsLoggedIn</span>(<span class="t-kw">false</span>)}&gt;ចាកចេញ (Logout)&lt;/<span class="t-tag">button</span>&gt;
       ) : (
-        &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setIsLoggedIn</span>(<span class="t-kw">true</span>)} <span class="t-attr">style</span>={{ background: <span class="t-str">'#0284C7'</span>, color: <span class="t-str">'#fff'</span>, border: 0, padding: <span class="t-str">'5px 12px'</span>, borderRadius: <span class="t-str">'4px'</span> }}&gt;ចូលគណនី (Login)&lt;/<span class="t-tag">button</span>&gt;
+        &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">setIsLoggedIn</span>(<span class="t-kw">true</span>)}&gt;ចូលគណនី (Login)&lt;/<span class="t-tag">button</span>&gt;
       )}
-      {isLoggedIn &amp;&amp; &lt;<span class="t-tag">p</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#16A34A'</span>, margin: <span class="t-str">'6px 0 0'</span> }}&gt;✓ អ្នកកំពុងស្ថិតក្នុងគណនី&lt;/<span class="t-tag">p</span>&gt;}
+
+      <span class="t-com">{/* 3. ប្រើ Logical AND (&&) បង្ហាញសារពេល Login រួច */}</span>
+      {isLoggedIn && &lt;<span class="t-tag">p</span>&gt;✓ អ្នកកំពុងស្ថិតក្នុងគណនី&lt;/<span class="t-tag">p</span>&gt;}
     &lt;/<span class="t-tag">div</span>&gt;
   );
-}
-
-<span class="t-kw">export default</span> AuthStatus;</pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li>បើ <code class="ic">isLoggedIn === true</code> វានឹងបង្ហាញប៊ូតុងពណ៌ក្រហម Logout
-                        ព្រមទាំងសារពណ៌បៃតងបញ្ជាក់តាម <code class="ic">&amp;&amp;</code>។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <button
-                            style="background:#DC2626; color:#fff; border:0; padding:4px 10px; border-radius:4px; font-size:0.82rem;">ចាកចេញ
-                            (Logout)</button>
-                        <p style="color:#16A34A; margin:6px 0 0; font-size:0.84rem;">✓ អ្នកកំពុងស្ថិតក្នុងគណនី</p>
-                    </div>
+}</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> ប្រើ Ternary Operator (<code class="ic">? :</code>)
-                    សម្រាប់លក្ខខណ្ឌជ្រើសរើសរវាង ២ និងប្រើ Logical AND (<code class="ic">&amp;&amp;</code>)
-                    សម្រាប់បង្ហាញនៅពេលលក្ខខណ្ឌពិតតែមួយមុខ។
+                    <strong>4. Summary (សង្ខេបមេរៀន)៖</strong> ប្រើ <code class="ic">? :</code> សម្រាប់ជម្រើស UI ២
+                    ផ្ទុយគ្នា, ប្រើ <code class="ic">&&</code> សម្រាប់បង្ហាញពេលលក្ខខណ្ឌពិត និងប្រើ <code
+                        class="ic">??</code> សម្រាប់ដាក់តម្លៃជំនួសពេលទិន្នន័យទទេ (<code class="ic">null</code>/<code
+                        class="ic">undefined</code>)។
                 </div>
             </div>
 
@@ -953,36 +1007,40 @@ npm run dev</pre>
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 13: CHAPTER 10 - LISTS AND KEYS
+         ទំព័រ 13: CHAPTER 10 - Lists Rendering
          ==================================================================== -->
         <section class="page" id="chapter-10">
             <div class="page-body">
                 <header class="page-top-header">
                     <a href="#toc">React.js</a>
-                    <span>10. Lists &amp; Keys</span>
+                    <span>10. Lists Rendering</span>
                 </header>
 
-                <h2 class="ch-title">10. Lists and Keys (Array Mapping)</h2>
+                <h2 class="ch-title">10. Lists Rendering</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">Lists Rendering គឺជាការបំប្លែងទិន្នន័យក្នុង JavaScript Array ឱ្យទៅជាបញ្ជីនៃធាតុ JSX
-                    ដោយប្រើប្រាស់អនុគមន៍ <code class="ic">Array.map()</code> អមដោយ <code class="ic">key</code>
-                    សម្គាល់ដាច់ដោយឡែក។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Lists Rendering</strong> គឺជាការទាញយកទិន្នន័យច្រើនៗពីក្នុង Array
+                    មកបង្ហាញជាបញ្ជីនៅលើផ្ទាំង UI ដោយប្រើ <code class="ic">.map()</code>។</p>
 
-                <p class="step-heading">2. Key Parts &amp; Roles (តួនាទីខ្វះមិនបាននៃ Key):</p>
-                <ul class="step-list">
-                    <li><strong>Array.map() (មេបំប្លែងទិន្នន័យ)៖</strong> ដើរឆ្លងកាត់ធាតុនីមួយៗក្នុង Array
-                        ហើយប្រគល់មកវិញនូវស្លាក JSX ស្វ័យប្រវត្តិ។</li>
-                    <li><strong>key Attribute (មេសម្គាល់អត្តសញ្ញាណ - ខ្វះមិនបាន)៖</strong> ត្រូវតែដាក់លើធាតុមេនៃ map
-                        ជានិច្ច (ជាធម្មតាប្រើ ID) ដើម្បីឱ្យ React ដឹងថាធាតុណាត្រូវបានកែប្រែ បន្ថែម ឬលុបចេញ ការពារបញ្ហា
-                        Render ខុសប្រក្រតី។</li>
+                <p class="step-heading">2. មុខងារ និងធាតុផ្សំសំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">array.map((item) =&gt; &lt;Li /&gt;)</code> <strong>(Mapping)៖</strong>
+                        រត់កាត់ទិន្នន័យម្តងមួយៗក្នុង Array រួចបំប្លែងទៅជាស្លាក JSX ដោយស្វ័យប្រវត្តិ។</li>
+                    <li><code class="ic">key={item.id}</code> <strong>(Unique Key Prop)៖</strong>
+                        កំណត់លេខសម្គាល់មិនស្ទួនលើធាតុមេនៃ <code class="ic">map()</code> ជានិច្ច។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើសម្រាប់បង្ហាញបញ្ជីឈ្មោះសិស្ស បញ្ជីមុខទំនិញ ឬតារាងទិន្នន័យដែលទាញចេញពី Server។
-                </p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ហេតុអ្វីបានជា <code
+                            class="ic">key</code> មានសារៈសំខាន់បំផុត?</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><strong>Virtual DOM Tracking៖</strong> ជួយឱ្យ React ដឹងច្បាស់ថាធាតុណាត្រូវបានបន្ថែម កែប្រែ
+                            ឬលុបចេញ ដោយមិនបាច់គូសបញ្ជីទាំងមូលឡើងវិញ (ចៀសវាងប្រើ Index ជា Key ពេលបញ្ជីអាចលុប ឬតម្រៀបបាន)។
+                        </li>
+                    </ul>
+                </div>
 
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">const</span> courses = [
   { id: 101, name: <span class="t-str">"HTML &amp; CSS មូលដ្ឋាន"</span> },
@@ -991,25 +1049,16 @@ npm run dev</pre>
 
 <span class="t-kw">function</span> <span class="t-fn">CourseList</span>() {
   <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">ul</span> <span class="t-attr">style</span>={{ paddingLeft: <span class="t-str">'20px'</span>, margin: 0 }}&gt;
+    &lt;<span class="t-tag">ul</span>&gt;
       {courses.<span class="t-fn">map</span>(({ id, name }) =&gt; (
-        &lt;<span class="t-tag">li</span> <span class="t-attr">key</span>={id} <span class="t-attr">style</span>={{ marginBottom: <span class="t-str">'4px'</span> }}&gt;{name}&lt;/<span class="t-tag">li</span>&gt;
+        &lt;<span class="t-tag">li</span> <span class="t-attr">key</span>={id}&gt;{name}&lt;/<span class="t-tag">li</span>&gt;
       ))}
     &lt;/<span class="t-tag">ul</span>&gt;
   );
-}
-
-<span class="t-kw">export default</span> CourseList;</pre>
+}</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">courses.map(...)</code> បំប្លែង Object នីមួយៗឱ្យចេញជាស្លាក <code
-                            class="ic">&lt;li&gt;</code>។</li>
-                    <li><code class="ic">key={id}</code> ផ្តល់លេខសម្គាល់មិនស្ទួនគ្នាឱ្យទៅធាតុនីមួយៗក្នុង DOM។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">4. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -1017,7 +1066,7 @@ npm run dev</pre>
                         <div class="browser-url-bar">http://localhost:5173</div>
                     </div>
                     <div class="browser-canvas">
-                        <ul style="padding-left:18px; margin:0; font-size:0.86rem; color:#0F172A;">
+                        <ul style="padding-left:18px; margin:0; font-size:0.84rem; color:#0F172A;">
                             <li>HTML &amp; CSS មូលដ្ឋាន</li>
                             <li>React.js ពីមូលដ្ឋានដល់ការអនុវត្ត</li>
                         </ul>
@@ -1025,9 +1074,9 @@ npm run dev</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> ការបង្ហាញទិន្នន័យបញ្ជីត្រូវប្រើ <code
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> ការបង្ហាញទិន្នន័យបញ្ជីត្រូវប្រើ <code
                         class="ic">Array.map()</code> និងតម្រូវឱ្យមាន <code class="ic">key</code>
-                    ពិសេសមិនស្ទួនគ្នាលើធាតុមេជានិច្ចដើម្បីរក្សា Performance។
+                    ពិសេសមិនស្ទួនគ្នាលើធាតុមេជានិច្ច ដើម្បីកុំឱ្យ React ច្រឡំគ្នាពេលមានការកែប្រែ ឬលុបទិន្នន័យ។
                 </div>
             </div>
 
@@ -1049,25 +1098,29 @@ npm run dev</pre>
 
                 <h2 class="ch-title">11. Forms Handling (Controlled Components)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">Controlled Component គឺជាទម្រង់គ្រប់គ្រងប្រអប់ Form នៅក្នុង React ដែលតម្លៃរបស់
-                    Input (<code class="ic">value</code>) ត្រូវបានភ្ជាប់ និងគ្រប់គ្រងទាំងស្រុងដោយ React State។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>Forms Handling</strong> គឺជាការគ្រប់គ្រង Form នៅក្នុង React
+                    ដោយភ្ជាប់តម្លៃរបស់ Input ទៅនឹង State ទាំងស្រុង។</p>
 
-                <p class="step-heading">2. Key Roles &amp; Functions (តួនាទីខ្វះមិនបាន):</p>
-                <ul class="step-list">
-                    <li><code class="ic">value={state}</code> <strong>(មេភ្ជាប់ទិន្នន័យ)៖</strong> បង្ខំឱ្យ Input
-                        បង្ហាញតម្លៃតាម State ជានិច្ច (Single Source of Truth)។</li>
-                    <li><code class="ic">onChange</code> <strong>(មេធ្វើបច្ចុប្បន្នភាព)៖</strong> ធ្វើបច្ចុប្បន្នភាព
-                        State រាល់ពេលអ្នកប្រើប្រាស់វាយអក្សរចូល។</li>
-                    <li><code class="ic">e.preventDefault()</code> <strong>(មេទប់ស្កាត់ - ខ្វះមិនបាន)៖</strong>
-                        ទប់ស្កាត់មិនឱ្យ Browser ធ្វើការ Refresh ទំព័រឡើងវិញនៅពេលចុច Submit Form។</li>
+                <p class="step-heading">2. មុខងារ និងវិធីសាស្ត្រសំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">value={state}</code> &amp; <code class="ic">onChange</code> <strong>(Two-Way
+                            Binding)៖</strong> ភ្ជាប់តម្លៃ Input ទៅ State និងធ្វើបច្ចុប្បន្នភាពរាល់ពេលវាយអក្សរ។</li>
+                    <li><code class="ic">onSubmit={handleSubmit}</code> <strong>(Form Submission)៖</strong>
+                        ចាប់ព្រឹត្តិការណ៍ពេលចុចប៊ូតុង Submit ឬចុច Enter។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើសម្រាប់គ្រប់ទម្រង់ Login, ចុះឈ្មោះ និងប្រអប់ស្វែងរក Search ទាំងអស់ក្នុង React។
-                </p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">មុខងារចាំបាច់ពេល Submit Form៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><code class="ic">e.preventDefault()</code><strong>៖</strong> ទប់ស្កាត់កុំឱ្យ Browser
+                            ធ្វើការ Refresh ទំព័រឡើងវិញដែលធ្វើឱ្យបាត់បង់ State ទាំងអស់។</li>
+                        <li><strong>Reset Input (<code class="ic">setEmail("")</code>)៖</strong> កំណត់ State
+                            ឱ្យទទេវិញដើម្បីសម្អាតប្រអប់ Input ក្រោយបញ្ជូនទិន្នន័យរួច។</li>
+                    </ul>
+                </div>
 
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">import</span> { useState } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
 
@@ -1075,29 +1128,21 @@ npm run dev</pre>
   <span class="t-kw">const</span> [email, setEmail] = <span class="t-fn">useState</span>(<span class="t-str">""</span>);
 
   <span class="t-kw">const</span> <span class="t-fn">handleSubmit</span> = (e) =&gt; {
-    e.<span class="t-fn">preventDefault</span>(); <span class="t-com">/* ការពារកុំឱ្យ Refresh ទំព័រ */</span>
+    e.<span class="t-fn">preventDefault</span>(); <span class="t-com">// ការពារកុំឱ្យ Refresh ទំព័រ</span>
     <span class="t-fn">alert</span>(<span class="t-str">`បានបញ្ជូនអ៊ីមែល៖ ${email}`</span>);
-    <span class="t-fn">setEmail</span>(<span class="t-str">""</span>); <span class="t-com">/* សម្អាតប្រអប់ក្រោយ Submit */</span>
+    <span class="t-fn">setEmail</span>(<span class="t-str">""</span>); <span class="t-com">// សម្អាតប្រអប់ក្រោយ Submit</span>
   };
 
   <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">form</span> <span class="t-attr">onSubmit</span>={handleSubmit} <span class="t-attr">style</span>={{ display: <span class="t-str">'flex'</span>, gap: <span class="t-str">'8px'</span> }}&gt;
-      &lt;<span class="t-tag">input</span> <span class="t-attr">type</span>=<span class="t-str">"email"</span> <span class="t-attr">value</span>={email} <span class="t-attr">onChange</span>={(e) =&gt; <span class="t-fn">setEmail</span>(e.target.value)} <span class="t-attr">placeholder</span>=<span class="t-str">"you@email.com"</span> <span class="t-attr">required</span> /&gt;
-      &lt;<span class="t-tag">button</span> <span class="t-attr">type</span>=<span class="t-str">"submit"</span> <span class="t-attr">style</span>={{ background: <span class="t-str">'#0284C7'</span>, color: <span class="t-str">'#fff'</span>, border: 0, padding: <span class="t-str">'5px 12px'</span>, borderRadius: <span class="t-str">'4px'</span> }}&gt;បញ្ជូន&lt;/<span class="t-tag">button</span>&gt;
+    &lt;<span class="t-tag">form</span> <span class="t-attr">onSubmit</span>={handleSubmit}&gt;
+      &lt;<span class="t-tag">input</span> <span class="t-attr">type</span>=<span class="t-str">"email"</span> <span class="t-attr">value</span>={email} <span class="t-attr">onChange</span>={(e) =&gt; <span class="t-fn">setEmail</span>(e.target.value)} <span class="t-attr">placeholder</span>=<span class="t-str">"you@email.com"</span> /&gt;
+      &lt;<span class="t-tag">button</span> <span class="t-attr">type</span>=<span class="t-str">"submit"</span>&gt;បញ្ជូន&lt;/<span class="t-tag">button</span>&gt;
     &lt;/<span class="t-tag">form</span>&gt;
   );
-}
-
-<span class="t-kw">export default</span> LoginForm;</pre>
+}</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">value={email}</code> និង <code class="ic">onChange</code>
-                        ដំណើរការស្របគ្នាបង្កើតបានជា Controlled Component ពេញលេញ។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">4. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -1107,17 +1152,17 @@ npm run dev</pre>
                     <div class="browser-canvas">
                         <div style="display:flex; gap:8px;">
                             <input type="email" placeholder="you@email.com"
-                                style="border:1px solid #CBD5E1; padding:4px 8px; border-radius:4px; font-size:0.82rem;">
+                                style="border:1px solid #CBD5E1; padding:4px 8px; border-radius:4px; font-size:0.80rem;">
                             <button
-                                style="background:#0284C7; color:#fff; border:0; padding:4px 12px; border-radius:4px; font-size:0.82rem;">បញ្ជូន</button>
+                                style="background:#0284C7; color:#fff; border:0; padding:4px 12px; border-radius:4px; font-size:0.80rem;">បញ្ជូន</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> ការគ្រប់គ្រង Form ត្រូវភ្ជាប់ <code
-                        class="ic">value</code> ទៅ State និងប្រើ <code class="ic">e.preventDefault()</code>
-                    ដើម្បីទប់ស្កាត់ការ Refresh ទំព័រឡើងវិញ។
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> ការគ្រប់គ្រង Form ត្រូវភ្ជាប់ <code
+                        class="ic">value</code> និង <code class="ic">onChange</code> ទៅ State ព្រមទាំងប្រើ <code
+                        class="ic">e.preventDefault()</code> ដើម្បីទប់ស្កាត់ការ Refresh ទំព័រឡើងវិញ។
                 </div>
             </div>
 
@@ -1139,78 +1184,57 @@ npm run dev</pre>
 
                 <h2 class="ch-title">12. LocalStorage &amp; Data Persistence</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">LocalStorage គឺជា Web Storage API របស់ Browser
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>LocalStorage</strong> គឺជា Web Storage API របស់ Browser
                     សម្រាប់រក្សាទុកទិន្នន័យជាអចិន្ត្រៃយ៍លើម៉ាស៊ីនអ្នកប្រើប្រាស់ ទោះបីជាបិទ ឬ Refresh Browser
                     ក៏មិនបាត់បង់ទិន្នន័យដែរ។</p>
 
-                <p class="step-heading">2. Key Methods &amp; Roles (តួមេទាំង ២ ក្នុងការគ្រប់គ្រងទិន្នន័យ):</p>
+                <p class="step-heading">2. មុខងារ និង Methods សំខាន់ៗ:</p>
                 <ul class="step-list">
-                    <li><code class="ic">JSON.stringify()</code> <strong>(មេបម្លែងជា String)៖</strong> LocalStorage
-                        ស្គាល់តែ String ដូច្នេះរាល់ Object ឬ Array ត្រូវបម្លែងជា String មុនរក្សាទុកតាម <code
-                            class="ic">localStorage.setItem()</code>។</li>
-                    <li><code class="ic">JSON.parse()</code> <strong>(មេបម្លែងជា Object វិញ)៖</strong> ពេលទាញទិន្នន័យតាម
-                        <code class="ic">localStorage.getItem()</code> ត្រូវបម្លែងពី String មកជា Object ឬ Array
-                        វិញដើម្បីយកមកប្រើក្នុង React State។
-                    </li>
+                    <li><code class="ic">localStorage.setItem('key', val)</code> <strong>(Save)៖</strong>
+                        រក្សាទុកទិន្នន័យចូលក្នុង Storage របស់ Browser។</li>
+                    <li><code class="ic">localStorage.getItem('key')</code> <strong>(Read)៖</strong> ទាញយកទិន្នន័យចេញពី
+                        Storage មកប្រើប្រាស់។</li>
+                    <li><code class="ic">localStorage.removeItem('key')</code> <strong>(Delete)៖</strong>
+                        លុបទិន្នន័យចេញពី Storage តាមឈ្មោះ Key។</li>
+                    <li><code class="ic">localStorage.clear()</code> <strong>(Clear All)៖</strong>
+                        លុបទិន្នន័យទាំងអស់ចេញពី Storage របស់ Browser។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើសម្រាប់រក្សាទុកទិន្នន័យកន្ត្រកទំនិញ (Cart), បញ្ជីការងារ Todo List និងការកំណត់
-                    Theme (Dark/Light Mode)។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ការបម្លែងទិន្នន័យ Array / Object
+                        ទៅជាមួយ JSON៖</p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><code class="ic">JSON.stringify(data)</code> <strong>៖</strong> LocalStorage ស្គាល់តែ String
+                            ដូច្នេះត្រូវបម្លែង Array/Object ទៅជា JSON String មុនរក្សាទុក។</li>
+                        <li><code class="ic">JSON.parse(str)</code> <strong>៖</strong> បម្លែង JSON String ត្រឡប់មកជា
+                            Array/Object វិញពេលទាញយកមកដាក់ក្នុង React State។</li>
+                    </ul>
+                </div>
+
+                <p class="step-heading">3. ប្រើពេលណា (When to Use):</p>
+                <p class="step-text">ប្រើសម្រាប់រក្សាទុកទិន្នន័យក្នុងកន្ត្រកទំនិញ (Shopping Cart)​ និងការកំណត់ Theme
+                    (Dark/Light Mode)។</p>
 
                 <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">import</span> { useState, useEffect } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
 
 <span class="t-kw">function</span> <span class="t-fn">NameSaver</span>() {
-  <span class="t-kw">const</span> [name, setName] = <span class="t-fn">useState</span>(() =&gt; {
-    <span class="t-kw">return</span> localStorage.<span class="t-fn">getItem</span>(<span class="t-str">"app_user"</span>) || <span class="t-str">""</span>;
-  });
+  <span class="t-kw">const</span> [name, setName] = <span class="t-fn">useState</span>(() =&gt; localStorage.<span class="t-fn">getItem</span>(<span class="t-str">"app_user"</span>) || <span class="t-str">""</span>);
 
   <span class="t-fn">useEffect</span>(() =&gt; {
     localStorage.<span class="t-fn">setItem</span>(<span class="t-str">"app_user"</span>, name);
   }, [name]);
 
-  <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">input</span> 
-      <span class="t-attr">value</span>={name} 
-      <span class="t-attr">onChange</span>={(e) =&gt; <span class="t-fn">setName</span>(e.target.value)} 
-      <span class="t-attr">placeholder</span>=<span class="t-str">"វាយឈ្មោះរក្សាទុក..."</span> 
-    /&gt;
-  );
-}
-
-<span class="t-kw">export default</span> NameSaver;</pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">useState(() =&gt; ...)</code> ទាញយកឈ្មោះពី LocalStorage
-                        មកធ្វើជាតម្លៃដើមពេលបើកទំព័រដំបូង។</li>
-                    <li><code class="ic">useEffect</code> ធ្វើបច្ចុប្បន្នភាពទិន្នន័យក្នុង Storage ស្វ័យប្រវត្តិតាម <code
-                            class="ic">[name]</code>។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <input type="text" value="លាត ប្រុស" readOnly
-                            style="border:1px solid #CBD5E1; padding:4px 8px; border-radius:4px; font-size:0.82rem;">
-                        <small style="display:block; color:#16A34A; margin-top:4px;">💾 រក្សាទុកក្នុង LocalStorage
-                            រួចរាល់ (Refresh មិនបាត់)</small>
-                    </div>
+  <span class="t-kw">return</span> &lt;<span class="t-tag">input</span> <span class="t-attr">value</span>={name} <span class="t-attr">onChange</span>={(e) =&gt; <span class="t-fn">setName</span>(e.target.value)} /&gt;;
+}</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> LocalStorage រក្សាទុកទិន្នន័យអចិន្ត្រៃយ៍លើ Client
-                    ដោយប្រើប្រាស់គូ <code class="ic">JSON.stringify()</code> សម្រាប់រក្សាទុក និង <code
-                        class="ic">JSON.parse()</code> សម្រាប់ទាញយកមកវិញ។
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> LocalStorage រក្សាទុកទិន្នន័យអចិន្ត្រៃយ៍នៅលើ Browser
+                    ដោយប្រើ <code class="ic">setItem()</code> សម្រាប់រក្សាទុក និង <code class="ic">getItem()</code>
+                    សម្រាប់ទាញយកទិន្នន័យមកប្រើប្រាស់វិញ។
                 </div>
             </div>
 
@@ -1232,24 +1256,35 @@ npm run dev</pre>
 
                 <h2 class="ch-title">13. React Hooks (useEffect &amp; useRef)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">React Hooks គឺជាអនុគមន៍ពិសេសសម្រាប់គ្រប់គ្រង Lifecycle និង DOM ដោយ <code
-                        class="ic">useEffect</code> គ្រប់គ្រង Side Effects និង <code class="ic">useRef</code>
-                    ប្រើសម្រាប់ចាប់យកធាតុ DOM ដោយផ្ទាល់។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>React Hooks</strong> គឺជា Function ពិសេសរបស់ React។ ដោយ <code
+                        class="ic">useEffect</code> ប្រើសម្រាប់បញ្ជាឱ្យកូដដំណើរការស្វ័យប្រវត្តិក្រោយពេល Render រួច។
+                    ចំណែក
+                    <code class="ic">useRef</code> ប្រើសម្រាប់ចាប់យកធាតុ HTML មកបញ្ជាដោយផ្ទាល់។
+                </p>
 
-                <p class="step-heading">2. Key Roles &amp; Differences (តួនាទីខ្វះមិនបាន):</p>
+                <p class="step-heading">2. មុខងារ និងភាពខុសគ្នាសំខាន់ៗ:</p>
                 <ul class="step-list">
-                    <li><strong>useEffect (មេគ្រប់គ្រង Side Effects)៖</strong> ដំណើរការកូដក្រោយពេល Render រួច។ បើដាក់
-                        Dependency <code class="ic">[]</code> ទំនេរ វានឹងដំណើរការតែម្តងគត់ (Component Mount) ដូចជាការ
-                        Fetch Data។</li>
-                    <li><strong>useRef (មេចាប់ DOM ដោយមិន Re-render)៖</strong> ភ្ជាប់ទៅធាតុ HTML ផ្ទាល់តាម <code
-                            class="ic">ref={myRef}</code> ដើម្បីបញ្ជា <code class="ic">.focus()</code> ដោយមិនបង្កឱ្យ
-                        Component ត្រូវគូសឡើងវិញឡើយ។</li>
+                    <li><code class="ic">useEffect</code> <strong>(Side Effects)៖</strong>
+                        ដំណើរការកូដក្រោយពេល Render រួច (ដូចជាការទាញ API, Timer ឬរក្សាទុក LocalStorage)៖
+                        <ul class="step-list" style="margin-top: 2px; margin-bottom: 4px;">
+                            <li><code class="ic">useEffect(() =&gt; {})</code> <strong>(គ្មាន Array)៖</strong>
+                                ដំណើរការរាល់ពេល Component ធ្វើការ Render ឡើងវិញ។</li>
+                            <li><code class="ic">useEffect(() =&gt; {}, [])</code> <strong>(Empty Array)៖</strong>
+                                ដំណើរការតែ ១ ដងគត់ពេលបើកទំព័រដំបូង (Mount)។</li>
+                            <li><code class="ic">useEffect(() =&gt; {}, [data])</code> <strong>(Dependencies)៖</strong>
+                                ដំណើរការរាល់ពេលតម្លៃ <code class="ic">data</code> មានការផ្លាស់ប្តូរ។</li>
+                        </ul>
+                    </li>
+                    <li><code class="ic">const myRef = useRef(null)</code> <strong>(DOM Reference)៖</strong>
+                        ភ្ជាប់ទៅធាតុ HTML ផ្ទាល់តាម <code class="ic">ref={myRef}</code> ដើម្បីបញ្ជា <code
+                            class="ic">.focus()</code> ដោយមិនបង្កឱ្យ Re-render។</li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
+                <p class="step-heading">3. ប្រើពេលណា (When to Use):</p>
                 <p class="step-text">ប្រើ <code class="ic">useEffect</code> ពេលទាញទិន្នន័យពី API និងប្រើ <code
-                        class="ic">useRef</code> ពេលចង់ឱ្យ Cursor លោតចូលប្រអប់ Input ស្វ័យប្រវត្តិ។</p>
+                        class="ic">useRef</code> ពេលចង់ឱ្យ Cursor លោតចូលប្រអប់ Input ស្វ័យប្រវត្តិ ឬគ្រប់គ្រង Video
+                    Player។</p>
 
                 <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
@@ -1259,24 +1294,14 @@ npm run dev</pre>
   <span class="t-kw">const</span> inputRef = <span class="t-fn">useRef</span>(<span class="t-kw">null</span>);
 
   <span class="t-fn">useEffect</span>(() =&gt; {
-    inputRef.current.<span class="t-fn">focus</span>(); <span class="t-com">/* Cursor លោតចូល Input ភ្លាមពេលបើកទំព័រ */</span>
+    inputRef.current.<span class="t-fn">focus</span>(); <span class="t-com">// ឱ្យ Cursor លោតចូល Input ភ្លាម</span>
   }, []);
 
-  <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">input</span> <span class="t-attr">ref</span>={inputRef} <span class="t-attr">placeholder</span>=<span class="t-str">"វាយទីនេះភ្លាមៗ..."</span> /&gt;
-  );
-}
-
-<span class="t-kw">export default</span> AutoFocusInput;</pre>
+  <span class="t-kw">return</span> &lt;<span class="t-tag">input</span> <span class="t-attr">ref</span>={inputRef} <span class="t-attr">placeholder</span>=<span class="t-str">"វាយទីនេះភ្លាមៗ..."</span> /&gt;;
+}</pre>
                 </div>
 
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">ref={inputRef}</code> ភ្ជាប់អថេរ Reference ទៅនឹង DOM Input ជាក់ស្តែង។</li>
-                    <li><code class="ic">[]</code> ធានាថាកូដ Focus ដំណើរការតែមួយដងគត់ពេលបើកទំព័រដំបូង។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
+                <p class="step-heading">5. Output (លទ្ធផលនៅលើ Browser):</p>
                 <div class="browser-window">
                     <div class="browser-header">
                         <div class="browser-dots"><span class="browser-dot dot-red"></span><span
@@ -1285,14 +1310,14 @@ npm run dev</pre>
                     </div>
                     <div class="browser-canvas">
                         <input type="text" placeholder="វាយទីនេះភ្លាមៗ..."
-                            style="border:2px solid #0284C7; outline:none; padding:4px 8px; border-radius:4px; font-size:0.82rem;">
+                            style="border:2px solid #0284C7; outline:none; padding:4px 8px; border-radius:4px; font-size:0.80rem;">
                         <small style="display:block; color:#64748B; margin-top:4px;">✨ Cursor
                             លោតចូលប្រអប់ស្វ័យប្រវត្តិតាមរយៈ useRef + useEffect</small>
                     </div>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> <code class="ic">useEffect</code> ដោះស្រាយ Side Effects
+                    <strong>6. Summary (សង្ខេបមេរៀន)៖</strong> <code class="ic">useEffect</code> ដោះស្រាយ Side Effects
                     តាមរយៈ Dependency Array រីឯ <code class="ic">useRef</code> ចាប់យក DOM ផ្ទាល់ដោយមិនធ្វើឱ្យ Re-render។
                 </div>
             </div>
@@ -1315,76 +1340,67 @@ npm run dev</pre>
 
                 <h2 class="ch-title">14. React Router (Client-Side Navigation)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">React Router (<code class="ic">react-router-dom</code>)
-                    គឺជាបណ្ណាល័យសម្រាប់គ្រប់គ្រងការផ្លាស់ប្តូរទំព័រលើ Client-Side ដោយមិនបាច់ Reload ទំព័រឡើងវិញឡើយ។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>React Router (<code class="ic">react-router</code>)</strong>
+                    គឺជា Library របស់ React ដែលប្រើសម្រាប់គ្រប់គ្រងការផ្លាស់ប្តូរទំព័រនៅលើ Browser ដោយមិនបាច់ Reload
+                    ទំព័រឡើងវិញឡើយ។</p>
 
-                <p class="step-heading">2. Key Components &amp; Roles (តួមេខ្វះមិនបានក្នុង Routing):</p>
-                <ul class="step-list">
-                    <li><code class="ic">&lt;BrowserRouter&gt;</code> <strong>(មេធំនៃ Routing)៖</strong> រុំព័ទ្ធ
-                        Component ទាំងអស់ដើម្បីបើកដំណើរការ Navigation។</li>
-                    <li><code class="ic">&lt;Routes&gt;</code> &amp; <code class="ic">&lt;Route&gt;</code>
-                        <strong>(មេផ្គូផ្គងផ្លូវ)៖</strong> ពិនិត្យមើល URL និងបង្ហាញ Component ដែលត្រូវនឹង Path នោះ។
+                <p class="step-heading">2. ការដំឡើង និង មុខងារសំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">npm install react-router</code> <strong>(ដំឡើង)៖</strong> ដំឡើងកញ្ចប់ React
+                        Router ចូលក្នុងគម្រោង។</li>
+                    <li><strong>Components ស្នូល៖</strong>
+                        <ul class="step-list" style="margin-top: 2px; margin-bottom: 2px;">
+                            <li><code class="ic">&lt;BrowserRouter&gt;</code><strong>៖</strong> Component
+                                មេធំបំផុតដែលរុំព័ទ្ធកម្មវិធីដើម្បីបើកដំណើរការ URL Routing។</li>
+                            <li><code class="ic">&lt;Routes&gt;</code><strong>៖</strong> ផ្ទុក និងគ្រប់គ្រងបញ្ជីផ្លូវ
+                                (<code class="ic">Route</code>) ទាំងអស់របស់វេបសាយ។</li>
+                            <li><code class="ic">&lt;Route path="..." element={...} /&gt;</code><strong>៖</strong>
+                                កំណត់ផ្លូវ URL និងបង្ហាញ Component តាម Path នីមួយៗ។</li>
+                            <li><code class="ic">&lt;Link to="..."&gt;</code><strong>៖</strong> ប្រើជំនួសស្លាក <code
+                                    class="ic">&lt;a&gt;</code> ដើម្បីចុចប្តូរទំព័រដោយគ្មានការ Reload។</li>
+                            <li><code class="ic">&lt;NavLink to="..."&gt;</code><strong>៖</strong> ដូច <code
+                                    class="ic">Link</code> ដែរ តែអាចដឹងថា Menu មួយណាកំពុង Active។</li>
+                            <li><code class="ic">&lt;Outlet /&gt;</code><strong>៖</strong> បង្ហាញទំព័រកូន (Nested
+                                Routes) នៅខាងក្នុង Layout រួម។</li>
+                            <li><code class="ic">&lt;Navigate to="..." /&gt;</code><strong>៖</strong>
+                                រុញអ្នកប្រើប្រាស់ទៅទំព័រផ្សេងដោយស្វ័យប្រវត្តិ (Redirect)។</li>
+                        </ul>
                     </li>
-                    <li><code class="ic">&lt;Link to="..."&gt;</code> <strong>(មេប្តូរទំព័រ - ខ្វះមិនបាន)៖</strong>
-                        ប្រើជំនួសស្លាក <code class="ic">&lt;a&gt;</code> ធម្មតា
-                        ដើម្បីប្តូរទំព័រលឿនដូចផ្លេកបន្ទោរដោយមិនវិលកង់ Reload។</li>
+                    <li><strong>Hooks សំខាន់ៗ៖</strong>
+                        <ul class="step-list" style="margin-top: 2px; margin-bottom: 0;">
+                            <li><code class="ic">useNavigate()</code><strong>៖</strong> បញ្ជាឱ្យប្តូរទំព័រតាមរយៈកូដ
+                                JavaScript (ឧ. ក្រោយពេល Login ជោគជ័យ)។</li>
+                            <li><code class="ic">useParams()</code><strong>៖</strong> ចាប់យកតម្លៃ Dynamic Parameter
+                                ពីលើ URL (ឧ. <code class="ic">/products/:id</code>)។</li>
+                            <li><code class="ic">useSearchParams()</code><strong>៖</strong> អាន និងកែប្រែ Query
+                                String នៅខាងក្រោយ URL (ឧ. <code class="ic">?search=react</code>)។</li>
+                            <li><code class="ic">useLocation()</code><strong>៖</strong>
+                                ទាញយកព័ត៌មានលម្អិតនៃទីតាំង URL បច្ចុប្បន្នដែលកំពុងស្ថិតនៅ។</li>
+                        </ul>
+                    </li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើនៅពេលដែលគេហទំព័រមានច្រើនទំព័រដូចជា៖ ទំព័រដើម (<code class="ic">/</code>),
-                    ទំព័រអំពីយើង (<code class="ic">/about</code>) និងទំព័រទំនាក់ទំនង (<code class="ic">/contact</code>)។
-                </p>
-
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
-                    <pre><span class="t-kw">import</span> { BrowserRouter, Routes, Route, Link } <span class="t-kw">from</span> <span class="t-str">'react-router-dom'</span>;
+                    <pre><span class="t-kw">import</span> { BrowserRouter, Routes, Route } <span class="t-kw">from</span> <span class="t-str">'react-router'</span>;
 
 <span class="t-kw">function</span> <span class="t-fn">App</span>() {
   <span class="t-kw">return</span> (
     &lt;<span class="t-tag">BrowserRouter</span>&gt;
-      &lt;<span class="t-tag">nav</span> <span class="t-attr">style</span>={{ display: <span class="t-str">'flex'</span>, gap: <span class="t-str">'12px'</span>, borderBottom: <span class="t-str">'1px solid #E2E8F0'</span>, paddingBottom: <span class="t-str">'6px'</span> }}&gt;
-        &lt;<span class="t-tag">Link</span> <span class="t-attr">to</span>=<span class="t-str">"/"</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, textDecoration: <span class="t-str">'none'</span> }}&gt;ទំព័រដើម&lt;/<span class="t-tag">Link</span>&gt;
-        &lt;<span class="t-tag">Link</span> <span class="t-attr">to</span>=<span class="t-str">"/about"</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, textDecoration: <span class="t-str">'none'</span> }}&gt;អំពីយើង&lt;/<span class="t-tag">Link</span>&gt;
-      &lt;/<span class="t-tag">nav</span>&gt;
       &lt;<span class="t-tag">Routes</span>&gt;
         &lt;<span class="t-tag">Route</span> <span class="t-attr">path</span>=<span class="t-str">"/"</span> <span class="t-attr">element</span>={&lt;<span class="t-tag">h3</span>&gt;ស្វាគមន៍មកកាន់ទំព័រដើម&lt;/<span class="t-tag">h3</span>&gt;} /&gt;
         &lt;<span class="t-tag">Route</span> <span class="t-attr">path</span>=<span class="t-str">"/about"</span> <span class="t-attr">element</span>={&lt;<span class="t-tag">h3</span>&gt;ព័ត៌មានអំពីយើង&lt;/<span class="t-tag">h3</span>&gt;} /&gt;
       &lt;/<span class="t-tag">Routes</span>&gt;
     &lt;/<span class="t-tag">BrowserRouter</span>&gt;
   );
-}
-
-<span class="t-kw">export default</span> App;</pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li><code class="ic">&lt;Link to="/about"&gt;</code> ផ្លាស់ប្តូរ URL ក្នុង Browser ភ្លាមៗដោយគ្មានការ
-                        Reload ទំព័រឡើយ។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173/about</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <div
-                            style="display:flex; gap:10px; border-bottom:1px solid #E2E8F0; padding-bottom:4px; font-size:0.84rem;">
-                            <span style="color:#64748B;">ទំព័រដើម</span>
-                            <strong style="color:#0284C7;">អំពីយើង (Active)</strong>
-                        </div>
-                        <h3 style="font-size:1rem; color:#0F172A; margin:6px 0 0;">ព័ត៌មានអំពីយើង</h3>
-                    </div>
+}</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> React Router អនុញ្ញាតឱ្យសាងសង់ SPA
-                    ដែលមានច្រើនទំព័រយ៉ាងរលូន ដោយប្រើប្រាស់ <code class="ic">&lt;Link&gt;</code> ជំនួសស្លាក <code
-                        class="ic">&lt;a&gt;</code>។
+                    <strong>4. Summary (សង្ខេបមេរៀន)៖</strong> React Router ជួយឱ្យគេហទំព័រប្តូរទំព័របានរហ័សដោយមិនបាច់
+                    Reload តាមរយៈការប្រើ <code class="ic">&lt;Routes&gt;</code> កំណត់ផ្លូវ និង <code
+                        class="ic">&lt;Link&gt;</code> ជំនួសស្លាក <code class="ic">&lt;a&gt;</code>។
                 </div>
             </div>
 
@@ -1406,31 +1422,34 @@ npm run dev</pre>
 
                 <h2 class="ch-title">15. API Integration (Async/Await &amp; Try-Catch-Finally)</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">API Integration គឺជាការតភ្ជាប់កម្មវិធី React ទៅកាន់ Backend Server
-                    ដើម្បីទាញយកទិន្នន័យ (JSON) តាមរយៈអនុគមន៍ <code class="ic">async/await</code> រួមជាមួយប្លុក <code
-                        class="ic">try-catch-finally</code> សម្រាប់គ្រប់គ្រងដំណើរការ និង Error ឱ្យមានសុវត្ថិភាពខ្ពស់។
-                </p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>API Integration</strong> គឺជាការតភ្ជាប់កម្មវិធី React ទៅកាន់ Server
+                    ដើម្បីទាញ ឬបញ្ជូនទិន្នន័យ (JSON) ដោយប្រើ <code class="ic">fetch()</code> ជាមួយ <code
+                        class="ic">async/await</code> និង <code class="ic">try-catch-finally</code>។</p>
 
-                <p class="step-heading">2. Key Roles &amp; States (តួនាទីខ្វះមិនបានក្នុង try-catch-finally):</p>
-                <ul class="step-list">
-                    <li><strong>try block (មេដំណើរការទាញទិន្នន័យ)៖</strong> ផ្ទុកកូដ Fetch ទិន្នន័យជាមួយ <code
-                            class="ic">await fetch()</code> និងបម្លែងជា JSON តាមរយៈ <code
-                            class="ic">await res.json()</code>។</li>
-                    <li><strong>catch block (មេចាប់ Error)៖</strong> ដំណើរការស្វ័យប្រវត្តិតែនៅពេលមានបញ្ហាដាច់អ៊ីនធឺណិត ឬ
-                        Server ខូច ដើម្បីកុំឱ្យកម្មវិធីគាំង (Crash)។</li>
-                    <li><strong>finally block (មេបញ្ចប់កិច្ចការ - ខ្វះមិនបាន)៖</strong> ដំណើរការជាចុងក្រោយជានិច្ច
-                        ទោះបីជោគជ័យ ឬបរាជ័យក៏ដោយ ស័ក្តិសមបំផុតសម្រាប់បិទ Loading តាមរយៈ <code
-                            class="ic">setLoading(false)</code>។</li>
-                    <li><strong>useEffect with [] (មេទាញពេលបើកទំព័រ)៖</strong> ដំណើរការទាញយកទិន្នន័យតែម្តងគត់នៅពេល
-                        Component បង្ហាញខ្លួនដំបូង។</li>
+                <p class="step-heading">2. មុខងារ និងផ្នែកសំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">await fetch(url)</code><strong>៖</strong> ផ្ញើសំណើទៅទាញទិន្នន័យពី API Endpoint
+                        តាមរយៈ URL។</li>
+                    <li><code class="ic">await res.json()</code><strong>៖</strong> បម្លែងទិន្នន័យ Response
+                        ដែលទទួលបានទៅជា JavaScript Object / Array។</li>
+                    <li><code class="ic">useEffect(() =&gt; { fetchData(); }, [])</code><strong>៖</strong>
+                        ហៅអនុគមន៍ទាញទិន្នន័យពេលបើកទំព័រដំបូង។</li>
+                    <li><strong>តួនាទីនៃប្លុក <code class="ic">try-catch-finally</code>៖</strong>
+                        <ul class="step-list" style="margin-top: 2px; margin-bottom: 0;">
+                            <li><code class="ic">try { ... }</code><strong>៖</strong> ដាក់កូដ <code
+                                    class="ic">fetch()</code> និងអាចប្រើ <code class="ic">throw new Error()</code>
+                                ដើម្បីបោះ Error ចេញដោយខ្លួនឯង។</li>
+                            <li><code class="ic">catch (err) { ... }</code><strong>៖</strong> ចាប់យក <code
+                                    class="ic">err</code> (Error Object ដែលផ្ទុក <code class="ic">err.message</code>)
+                                ពេលដាច់អ៊ីនធឺណិត ឬ <code class="ic">throw</code> បោះមក។</li>
+                            <li><code class="ic">finally { ... }</code><strong>៖</strong> ដំណើរការចុងក្រោយជានិច្ច
+                                សម្រាប់បិទ Loading (<code class="ic">setLoading(false)</code>)។</li>
+                        </ul>
+                    </li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">ប្រើរាល់ពេលដែលកម្មវិធីត្រូវការទាញទិន្នន័យជាក់ស្តែងពី Database
-                    ដូចជាបញ្ជីអ្នកប្រើប្រាស់ បញ្ជីផលិតផល ឬទិន្នន័យអត្ថបទពី RESTful API។</p>
-
-                <p class="step-heading">4. Syntax (ទម្រង់កូដ):</p>
+                <p class="step-heading">3. Syntax (ទម្រង់កូដ):</p>
                 <div class="code-box">
                     <pre><span class="t-kw">import</span> { useState, useEffect } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
 
@@ -1441,63 +1460,27 @@ npm run dev</pre>
   <span class="t-fn">useEffect</span>(() =&gt; {
     <span class="t-kw">const</span> <span class="t-fn">fetchUsers</span> = <span class="t-kw">async</span> () =&gt; {
       <span class="t-kw">try</span> {
-        <span class="t-kw">const</span> res = <span class="t-kw">await</span> <span class="t-fn">fetch</span>(<span class="t-str">"https://jsonplaceholder.typicode.com/users?_limit=2"</span>);
+        <span class="t-kw">const</span> res = <span class="t-kw">await</span> <span class="t-fn">fetch</span>(<span class="t-str">"https://jsonplaceholder.typicode.com/users"</span>);
+        <span class="t-kw">if</span> (!res.ok) <span class="t-kw">throw new</span> <span class="t-fn">Error</span>(<span class="t-str">"ទាញទិន្នន័យបរាជ័យ!"</span>);
         <span class="t-kw">const</span> data = <span class="t-kw">await</span> res.<span class="t-fn">json</span>();
         <span class="t-fn">setUsers</span>(data);
-      } <span class="t-kw">catch</span> (error) {
-        console.<span class="t-fn">error</span>(<span class="t-str">"មានបញ្ហាក្នុងការទាញទិន្នន័យ៖"</span>, error);
+      } <span class="t-kw">catch</span> (err) {
+        console.<span class="t-fn">error</span>(err.message);
       } <span class="t-kw">finally</span> {
-        <span class="t-fn">setLoading</span>(<span class="t-kw">false</span>); <span class="t-com">/* បិទ Loading ជានិច្ចទោះបីជោគជ័យ ឬខុស */</span>
+        <span class="t-fn">setLoading</span>(<span class="t-kw">false</span>);
       }
     };
-
     <span class="t-fn">fetchUsers</span>();
   }, []);
 
   <span class="t-kw">if</span> (loading) <span class="t-kw">return</span> &lt;<span class="t-tag">p</span>&gt;កំពុងទាញទិន្នន័យ...&lt;/<span class="t-tag">p</span>&gt;;
-
-  <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">ul</span>&gt;
-      {users.<span class="t-fn">map</span>(({ id, name }) =&gt; (
-        &lt;<span class="t-tag">li</span> <span class="t-attr">key</span>={id}&gt;{name}&lt;/<span class="t-tag">li</span>&gt;
-      ))}
-    &lt;/<span class="t-tag">ul</span>&gt;
-  );
-}
-
-<span class="t-kw">export default</span> UserList;</pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់កូដ):</p>
-                <ul class="step-list">
-                    <li>មិនអាចដាក់ពាក្យ <code class="ic">async</code> ផ្ទាល់លើ <code
-                            class="ic">useEffect(async () =&gt; ...)</code> បានទេ ដូច្នេះត្រូវបង្កើតអនុគមន៍ <code
-                            class="ic">const fetchUsers = async () =&gt; {}</code> នៅខាងក្នុងរួចហៅដំណើរការវា។</li>
-                    <li><code class="ic">finally</code> ធានាថា <code class="ic">setLoading(false)</code> ដំណើរការជានិច្ច
-                        ជួយការពារកុំឱ្យទំព័រវិលកង់ Loading រហូតពេលដាច់អ៊ីនធឺណិត។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots">
-                            <span class="browser-dot dot-red"></span>
-                            <span class="browser-dot dot-yellow"></span>
-                            <span class="browser-dot dot-green"></span>
-                        </div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <ul style="padding-left:18px; margin:0; font-size:0.86rem; color:#0F172A;">
-                            <li>Leanne Graham</li>
-                            <li>Ervin Howell</li>
-                        </ul>
-                    </div>
+  <span class="t-kw">return</span> &lt;<span class="t-tag">ul</span>&gt;{users.<span class="t-fn">map</span>(({ id, name }) =&gt; &lt;<span class="t-tag">li</span> <span class="t-attr">key</span>={id}&gt;{name}&lt;/<span class="t-tag">li</span>&gt;)}&lt;/<span class="t-tag">ul</span>&gt;;
+}</pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> ការប្រើប្រាស់ <code class="ic">async/await</code> ជាមួយ
-                    <code class="ic">try-catch-finally</code> ធ្វើឱ្យកូដទាញទិន្នន័យស្អាត ងាយអាន និងធានាថា <code
+                    <strong>4. Summary (សង្ខេបមេរៀន)៖</strong> ការប្រើ <code class="ic">async/await</code> ជាមួយ
+                    <code class="ic">try-catch-finally</code> ជួយឱ្យកូដទាញទិន្នន័យងាយអាន និងធានាថា <code
                         class="ic">loading</code> ត្រូវបានបិទជានិច្ចក្នុងប្លុក <code class="ic">finally</code>។
                 </div>
             </div>
@@ -1509,69 +1492,78 @@ npm run dev</pre>
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 19: CHAPTER 16 - ARCHITECTURE & MODULAR CSS
+         ទំព័រ 19: CHAPTER 16 - ARCHITECTURE
          ==================================================================== -->
         <section class="page" id="chapter-16">
             <div class="page-body">
                 <header class="page-top-header">
                     <a href="#toc">React.js</a>
-                    <span>16. Architecture &amp; Modular CSS</span>
+                    <span>16. Architecture</span>
                 </header>
 
-                <h2 class="ch-title">16. React Architecture &amp; Pure CSS</h2>
+                <h2 class="ch-title">16. React Architecture</h2>
 
-                <p class="step-heading">1. Definition (តើវាជាអ្វី?):</p>
-                <p class="step-text">React Architecture គឺជាការរៀបចំរចនាសម្ព័ន្ធ Folders និង Files ឱ្យមានស្តង់ដារ
-                    និងការប្រើប្រាស់ CSS ដាច់ដោយឡែក (Vanilla CSS / CSS Modules) ដោយមិនពឹងផ្អែកលើ Tailwind CSS។</p>
+                <p class="step-heading">1. Definition (និយមន័យ):</p>
+                <p class="step-text"><strong>React Architecture</strong> គឺជាការរៀបចំរចនាសម្ព័ន្ធ Folders និង Files
+                    ឱ្យមានស្តង់ដារតាមតួនាទីនីមួយៗ ដើម្បីងាយស្រួលគ្រប់គ្រង។</p>
 
-                <p class="step-heading">2. Key Folders &amp; Roles (តួនាទីថតឯកសារនីមួយៗ):</p>
-                <ul class="step-list">
-                    <li><strong>components/ (មេផ្ទុកបំណែក UI)៖</strong> ផ្ទុកបំណែកតូចៗដែលប្រើឡើងវិញបានច្រើនកន្លែង ដូចជា
-                        <code class="ic">Navbar.jsx</code>, <code class="ic">Button.jsx</code>។
+                <p class="step-heading">2. មុខងាររបស់ Folders និង Files សំខាន់ៗ:</p>
+                <ul class="step-list" style="margin-bottom: 4px;">
+                    <li><code class="ic">src/layouts/</code> <strong>(Page Layouts)៖</strong> ផ្ទុកគ្រោងឆ្អឹងទំព័ររួម
+                        ដូចជា <code class="ic">MainLayout.jsx</code>, <code class="ic">AdminLayout.jsx</code>
+                        (ប្រើជាមួយ <code class="ic">&lt;Outlet /&gt;</code>)។</li>
+                    <li><code class="ic">src/components/</code> <strong>(Reusable UI)៖</strong> ផ្ទុកបំណែក UI
+                        តូចៗប្រើឡើងវិញបាន ដូចជា <code class="ic">Navbar.jsx</code>, <code class="ic">Button.jsx</code>។
                     </li>
-                    <li><strong>pages/ (មេផ្ទុកទំព័រពេញលេញ)៖</strong> ផ្ទុកទំព័រសម្រាប់ភ្ជាប់ជាមួយ React Router ដូចជា
-                        <code class="ic">Home.jsx</code>, <code class="ic">About.jsx</code>។
+                    <li><code class="ic">src/pages/</code> <strong>(Page Views)៖</strong>
+                        ផ្ទុកទំព័រពេញលេញសម្រាប់ភ្ជាប់ជាមួយ Routes ដូចជា <code class="ic">Home.jsx</code>, <code
+                            class="ic">About.jsx</code>។</li>
+                    <li><code class="ic">src/auth/</code> <strong>(Authentication)៖</strong>
+                        ផ្ទុកកូដគ្រប់គ្រងការ Login និងសិទ្ធិអ្នកប្រើប្រាស់ ដូចជា <code
+                            class="ic">AuthContext.jsx</code>,
+                        <code class="ic">ProtectedRoute.jsx</code>។
                     </li>
-                    <li><strong>style.css (មេកំណត់ Style រួម)៖</strong> ឯកសារ CSS ស្តង់ដារកំណត់ Layout
-                        និងប្រព័ន្ធពណ៌ជារួម។</li>
+                    <li><code class="ic">src/services/</code> <strong>(API Calls)៖</strong> ផ្ទុកកូដភ្ជាប់ទៅកាន់
+                        Backend API (<code class="ic">api.js</code>) ដើម្បីកុំឱ្យកូដ Fetch លាយឡំក្នុង UI។</li>
+                    <li><code class="ic">src/utils/</code> <strong>(Helpers)៖</strong>
+                        ផ្ទុកអនុគមន៍ជំនួយទូទៅ ដូចជាការបម្លែងថ្ងៃខែ ឬរូបិយប័ណ្ណ (<code class="ic">formatDate.js</code>)។
+                    </li>
                 </ul>
 
-                <p class="step-heading">3. When to Use (តើប្រើនៅពេលណា?):</p>
-                <p class="step-text">អនុវត្តលើគ្រប់គម្រោង React ជាក់ស្តែងទាំងអស់ដើម្បីងាយស្រួលធ្វើការងារជាក្រុម។</p>
+                <div style="margin-left: 16px;">
+                    <p style="font-size: 0.80rem; font-weight: 600; margin: 2px 0;">ឯកសារស្នូល និងការគ្រប់គ្រង Style៖
+                    </p>
+                    <ul class="step-list" style="margin-top: 0;">
+                        <li><code class="ic">src/assets/</code><strong>៖</strong> ផ្ទុករូបភាព Logo, Icons និង Fonts
+                            ដែលត្រូវ Import យកទៅប្រើក្នុង Components។</li>
+                        <li><code class="ic">src/style.css</code> ឬ <code
+                                class="ic">*.module.css</code><strong>៖</strong>
+                            កំណត់ Layout និងប្រព័ន្ធពណ៌ស្តង់ដារដាច់ដោយឡែកពីកូដ JavaScript។</li>
+                    </ul>
+                </div>
+
+                <p class="step-heading">3. ប្រើពេលណា (When to Use):</p>
+                <p class="step-text">អនុវត្តលើគ្រប់គម្រោង React ជាក់ស្តែងទាំងអស់ដើម្បីឱ្យ Codebase មានរបៀបរៀបរយ
+                    និងងាយស្រួលធ្វើការងារជាក្រុម។</p>
 
                 <p class="step-heading">4. Syntax (រចនាសម្ព័ន្ធ Folder ស្តង់ដារ):</p>
                 <div class="code-box">
                     <pre>src/
-├── assets/         <span class="t-com"># រូបភាព និង Icons</span>
-├── components/     <span class="t-com"># បំណែក UI ប្រើឡើងវិញបាន (Navbar.jsx, Button.jsx)</span>
-├── pages/          <span class="t-com"># ទំព័រពេញលេញភ្ជាប់ជាមួយ Routes (Home.jsx)</span>
-├── App.jsx         <span class="t-com"># Component មេគ្រប់គ្រង Layout</span>
-├── main.jsx        <span class="t-com"># ចំណុចចាប់ផ្តើមភ្ជាប់ DOM</span>
-└── style.css       <span class="t-com"># CSS ស្តង់ដារសុទ្ធ 100% មិនប្រើ Tailwind</span></pre>
-                </div>
-
-                <p class="step-heading">5. Explanation (ការពន្យល់រចនាសម្ព័ន្ធ):</p>
-                <ul class="step-list">
-                    <li>ការបែងចែកច្បាស់លាស់ជួយឱ្យកូដមិនរញ៉េរញ៉ៃ និងងាយស្រួល Deploy លើ Vercel។</li>
-                </ul>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <div style="font-size:0.84rem; color:#0284C7; font-weight:600;">
-                            📁 Clean Architecture: Modular Components + Pure Standard CSS (No Tailwind)
-                        </div>
-                    </div>
+├── assets/         <span class="t-com">// រូបភាព, Logo និង Icons</span>
+├── auth/           <span class="t-com">// គ្រប់គ្រង Login និងសិទ្ធិ (ProtectedRoute.jsx)</span>
+├── components/     <span class="t-com">// បំណែក UI ប្រើឡើងវិញបាន (Navbar, Button)</span>
+├── layouts/        <span class="t-com">// គ្រោងឆ្អឹងទំព័ររួម (MainLayout.jsx)</span>
+├── pages/          <span class="t-com">// ទំព័រពេញលេញភ្ជាប់ Routes (Home, About)</span>
+├── services/       <span class="t-com">// អនុគមន៍ទាញទិន្នន័យ API (api.js)</span>
+├── utils/          <span class="t-com">// អនុគមន៍ជំនួយផ្សេងៗ (formatDate.js)</span>
+├── App.jsx         <span class="t-com">// Component មេគ្រប់គ្រង Routes</span>
+├── main.jsx        <span class="t-com">// ចំណុចចាប់ផ្តើមភ្ជាប់ទៅ DOM (#root)</span>
+└── style.css       <span class="t-com">// CSS ស្តង់ដារសម្រាប់តុបតែង UI</span></pre>
                 </div>
 
                 <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> ការរៀបចំ Folder Architecture ច្បាស់លាស់ជួយឱ្យ Codebase
-                    ស្អាត ងាយស្រួល Maintain និងបង្កើនប្រសិទ្ធភាពការងារជាក្រុម។
+                    <strong>5. Summary (សង្ខេបមេរៀន)៖</strong> ការរៀបចំ Folder Architecture ច្បាស់លាស់ជួយឱ្យ Codebase
+                    ស្អាត ងាយស្រួលថែទាំ និងកែសម្រួល ព្រមទាំងបង្កើនប្រសិទ្ធភាពការងារជាក្រុម។
                 </div>
             </div>
 
@@ -1582,134 +1574,39 @@ npm run dev</pre>
         </section>
 
         <!-- ====================================================================
-         ទំព័រ 20: CHAPTER 17 - PRACTICAL PROJECT
+         ទំព័រ 20: សន្លឹកចុងក្រោយនៃសៀវភៅ (សូមអរគុណ - THE END)
          ==================================================================== -->
-        <section class="page" id="chapter-17">
-            <div class="page-body">
-                <header class="page-top-header">
-                    <a href="#toc-projects">React.js</a>
-                    <span>17. Practical Project</span>
-                </header>
+        <section class="page thankyou-page" id="thank-you">
+            <svg class="cover-bg-atom" viewBox="-11.5 -10.23174 23 20.46348" fill="none">
+                <circle cx="0" cy="0" r="2.05" fill="#38BDF8" />
+                <g stroke="#38BDF8" stroke-width="1">
+                    <ellipse rx="11" ry="4.2" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                </g>
+            </svg>
 
-                <h2 class="ch-title">17. Practical Project: Task Manager (Pure React &amp; CSS)</h2>
-
-                <p class="step-heading">1. Project Overview (សេចក្តីពិពណ៌នាគម្រោង):</p>
-                <p class="step-text">បង្កើតកម្មវិធីគ្រប់គ្រងកិច្ចការសិក្សាពេញលេញ ដោយប្រើប្រាស់ React សុទ្ធសាធ រួមមាន
-                    <code class="ic">useState</code>, <code class="ic">useEffect</code>, <strong>LocalStorage</strong>
-                    និងការរចនាដោយ CSS ស្តង់ដារ (មិនប្រើ Tailwind ឡើយ)។
+            <div class="thankyou-box">
+                <span class="cover-pill" style="display:inline-block; margin-bottom:14px;">THE END • ចប់</span>
+                <h2 class="cover-main-title" style="font-size:2.3rem;">សូមអរគុណ!</h2>
+                <div class="cover-line" style="margin: 14px auto 18px;"></div>
+                <p class="step-text" style="color: #E2E8F0; margin-bottom: 14px;">
+                    សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅដល់មិត្តអ្នកអាន និងសិស្សានុសិស្សទាំងអស់ ដែលបានយកចិត្តទុកដាក់សិក្សាសៀវភៅ
+                    <strong style="color:#38BDF8;">React.js ពីមូលដ្ឋានដល់ការអនុវត្ត</strong>
+                    នេះតាំងពីទំព័រដំបូងរហូតដល់ទំព័រចុងក្រោយ។
                 </p>
-
-                <p class="step-heading">2. Key Features (មុខងារស្នូល):</p>
-                <ul class="step-list">
-                    <li>បន្ថែម និងលុបកិច្ចការសិក្សាបានភ្លាមៗដោយគ្មានការ Reload ទំព័រ។</li>
-                    <li>រក្សាទុកទិន្នន័យអចិន្ត្រៃយ៍ក្នុង LocalStorage (Refresh ទំព័រមិនបាត់ឡើយ)។</li>
-                </ul>
-
-                <p class="step-heading">4. Complete Code (កូដពេញលេញសម្រាប់អនុវត្ត):</p>
-                <div class="code-box">
-                    <pre><span class="t-kw">import</span> { useState, useEffect } <span class="t-kw">from</span> <span class="t-str">'react'</span>;
-
-<span class="t-kw">function</span> <span class="t-fn">TaskManager</span>() {
-  <span class="t-kw">const</span> [tasks, setTasks] = <span class="t-fn">useState</span>(() =&gt; {
-    <span class="t-kw">const</span> saved = localStorage.<span class="t-fn">getItem</span>(<span class="t-str">"tasks_db"</span>);
-    <span class="t-kw">return</span> saved ? JSON.<span class="t-fn">parse</span>(saved) : [];
-  });
-  <span class="t-kw">const</span> [text, setText] = <span class="t-fn">useState</span>(<span class="t-str">""</span>);
-
-  <span class="t-fn">useEffect</span>(() =&gt; {
-    localStorage.<span class="t-fn">setItem</span>(<span class="t-str">"tasks_db"</span>, JSON.<span class="t-fn">stringify</span>(tasks));
-  }, [tasks]);
-
-  <span class="t-kw">const</span> <span class="t-fn">addTask</span> = (e) =&gt; {
-    e.<span class="t-fn">preventDefault</span>();
-    <span class="t-kw">if</span> (!text.<span class="t-fn">trim</span>()) <span class="t-kw">return</span>;
-    <span class="t-fn">setTasks</span>([...tasks, { id: Date.<span class="t-fn">now</span>(), title: text }]);
-    <span class="t-fn">setText</span>(<span class="t-str">""</span>);
-  };
-
-  <span class="t-kw">const</span> <span class="t-fn">deleteTask</span> = (id) =&gt; <span class="t-fn">setTasks</span>(tasks.<span class="t-fn">filter</span>((item) =&gt; item.id !== id));
-
-  <span class="t-kw">return</span> (
-    &lt;<span class="t-tag">div</span> <span class="t-attr">style</span>={{ maxWidth: <span class="t-str">'380px'</span>, margin: <span class="t-str">'0 auto'</span>, padding: <span class="t-str">'12px'</span>, border: <span class="t-str">'1px solid #CBD5E1'</span>, borderRadius: <span class="t-str">'6px'</span> }}&gt;
-      &lt;<span class="t-tag">h3</span> <span class="t-attr">style</span>={{ color: <span class="t-str">'#0284C7'</span>, margin: <span class="t-str">'0 0 8px'</span> }}&gt;កម្មវិធីគ្រប់គ្រងកិច្ចការ&lt;/<span class="t-tag">h3</span>&gt;
-      &lt;<span class="t-tag">form</span> <span class="t-attr">onSubmit</span>={addTask} <span class="t-attr">style</span>={{ display: <span class="t-str">'flex'</span>, gap: <span class="t-str">'6px'</span>, marginBottom: <span class="t-str">'8px'</span> }}&gt;
-        &lt;<span class="t-tag">input</span> <span class="t-attr">value</span>={text} <span class="t-attr">onChange</span>={(e) =&gt; <span class="t-fn">setText</span>(e.target.value)} <span class="t-attr">placeholder</span>=<span class="t-str">"កិច្ចការថ្មី..."</span> <span class="t-attr">style</span>={{ flex: 1, padding: <span class="t-str">'4px 8px'</span> }} /&gt;
-        &lt;<span class="t-tag">button</span> <span class="t-attr">style</span>={{ background: <span class="t-str">'#0284C7'</span>, color: <span class="t-str">'#fff'</span>, border: 0, padding: <span class="t-str">'4px 10px'</span>, borderRadius: <span class="t-str">'4px'</span> }}&gt;បន្ថែម&lt;/<span class="t-tag">button</span>&gt;
-      &lt;/<span class="t-tag">form</span>&gt;
-      &lt;<span class="t-tag">ul</span> <span class="t-attr">style</span>={{ listStyle: <span class="t-str">'none'</span>, padding: 0, margin: 0 }}&gt;
-        {tasks.<span class="t-fn">map</span>(({ id, title }) =&gt; (
-          &lt;<span class="t-tag">li</span> <span class="t-attr">key</span>={id} <span class="t-attr">style</span>={{ display: <span class="t-str">'flex'</span>, justifyContent: <span class="t-str">'space-between'</span>, padding: <span class="t-str">'4px 0'</span>, borderBottom: <span class="t-str">'1px dashed #E2E8F0'</span> }}&gt;
-            &lt;<span class="t-tag">span</span>&gt;{title}&lt;/<span class="t-tag">span</span>&gt;
-            &lt;<span class="t-tag">button</span> <span class="t-attr">onClick</span>={() =&gt; <span class="t-fn">deleteTask</span>(id)} <span class="t-attr">style</span>={{ background: <span class="t-str">'#DC2626'</span>, color: <span class="t-str">'#fff'</span>, border: 0, padding: <span class="t-str">'2px 6px'</span>, borderRadius: <span class="t-str">'3px'</span>, fontSize: <span class="t-str">'0.75rem'</span> }}&gt;លុប&lt;/<span class="t-tag">button</span>&gt;
-          &lt;/<span class="t-tag">li</span>&gt;
-        ))}
-      &lt;/<span class="t-tag">ul</span>&gt;
-    &lt;/<span class="t-tag">div</span>&gt;
-  );
-}
-
-<span class="t-kw">export default</span> TaskManager;</pre>
-                </div>
-
-                <p class="step-heading">6. Output (លទ្ធផលនៅលើ Browser):</p>
-                <div class="browser-window">
-                    <div class="browser-header">
-                        <div class="browser-dots"><span class="browser-dot dot-red"></span><span
-                                class="browser-dot dot-yellow"></span><span class="browser-dot dot-green"></span></div>
-                        <div class="browser-url-bar">http://localhost:5173</div>
-                    </div>
-                    <div class="browser-canvas">
-                        <div style="max-width:320px; border:1px solid #CBD5E1; padding:8px; border-radius:6px;">
-                            <div style="font-weight:700; color:#0284C7; font-size:0.86rem; margin-bottom:6px;">
-                                កម្មវិធីគ្រប់គ្រងកិច្ចការ</div>
-                            <div
-                                style="display:flex; justify-content:space-between; font-size:0.82rem; padding:3px 0; border-bottom:1px dashed #E2E8F0;">
-                                <span>រៀន React Components</span>
-                                <span style="color:#DC2626; cursor:pointer;">[លុប]</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="summary-box">
-                    <strong>7. Summary (សង្ខេបមេរៀន)៖</strong> គម្រោងនេះរួមបញ្ចូលគ្នានូវ State, Events, Lists,
-                    Controlled Forms និង LocalStorage ដែលជាមូលដ្ឋានគ្រឹះពិតប្រាកដក្នុងការបង្កើតកម្មវិធី React អាជីព។
-                </div>
+                <p class="step-text" style="color: #94A3B8; margin-bottom: 22px;">
+                    ការយល់ច្បាស់ពីមូលដ្ឋានគ្រឹះនៃ React.js និងការអនុវត្តកូដដោយផ្ទាល់ដៃជារៀងរាល់ថ្ងៃ
+                    គឺជាគន្លឹះចម្បងដែលជួយឱ្យអ្នកក្លាយជាអ្នកអភិវឌ្ឍន៍គេហទំព័រ (Frontend Developer) ដ៏ជំនាញ។
+                </p>
+                <a href="https://t.me/leatbros0979445608" target="_blank" rel="noopener" class="cover-tg-btn">
+                    ទំនាក់ទំនងមកកាន់ខ្ញុំ ➔
+                </a>
             </div>
 
             <footer class="page-foot">
                 <span class="author-credit">រៀបចំដោយ៖ លាត ប្រុស</span>
                 <span class="page-num">ទំព័រ 20</span>
-            </footer>
-        </section>
-
-        <!-- ====================================================================
-         ទំព័រ 21: សន្លឹកចុងក្រោយនៃសៀវភៅ (សូមអរគុណ - THE END)
-         ==================================================================== -->
-        <section class="page thankyou-page" id="thank-you">
-            <div class="cover-center-box">
-                <span class="cover-badge-pill">The End</span>
-                <h2 class="cover-main-title">សូមអរគុណ!</h2>
-                <p class="cover-subtitle">
-                    សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅដល់មិត្តអ្នកអាន និងសិស្សានុសិស្សទាំងអស់ ដែលបានយកចិត្តទុកដាក់សិក្សាសៀវភៅ
-                    <strong>React.js</strong> នេះតាំងពីទំព័រដំបូងរហូតដល់ទំព័រចុងក្រោយ។
-                </p>
-                <div class="cover-line"></div>
-                <p class="step-text" style="max-width: 520px; margin: 0 auto 1.75rem; color: var(--muted);">
-                    ការយល់ច្បាស់ពីមូលដ្ឋានគ្រឹះនៃ React.js និងការអនុវត្តកូដដោយផ្ទាល់ដៃជារៀងរាល់ថ្ងៃ
-                    គឺជាគន្លឹះចម្បងដែលជួយឱ្យអ្នកក្លាយជាអ្នកអភិវឌ្ឍន៍គេហទំព័រ (Frontend Developer) ដ៏ជំនាញ។
-                    សូមជូនពរឱ្យអ្នកទទួលបានជោគជ័យក្នុងការសិក្សា និងអាជីពការងារ!
-                </p>
-                <div class="cover-meta">
-                    <p>រៀបរៀង និងចងក្រងដោយ៖ <strong>លាត ប្រុស</strong></p>
-                    <p>ទំនាក់ទំនងសាកសួរមេរៀន៖ <a href="https://t.me/leatbros0979445608" target="_blank"
-                            rel="noopener">Telegram</a></p>
-                </div>
-            </div>
-
-            <footer class="page-foot" style="width: 100%;">
-                <span class="author-credit">រៀបចំដោយ៖ លាត ប្រុស</span>
-                <span class="page-num">ទំព័រ 21</span>
             </footer>
         </section>
 
