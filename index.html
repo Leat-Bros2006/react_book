@@ -161,7 +161,8 @@
                                 (Fetch &amp; Async/Await)</span></div><span class="toc-page">ទំព័រ 18</span>
                     </a>
                     <a href="#chapter-16" class="toc-row">
-                        <div class="toc-left"><span class="toc-num">16.</span><span class="toc-title">React Architecture</span></div><span class="toc-page">ទំព័រ 19</span>
+                        <div class="toc-left"><span class="toc-num">16.</span><span class="toc-title">React
+                                Architecture</span></div><span class="toc-page">ទំព័រ 19</span>
                     </a>
                 </nav>
             </div>
@@ -1357,12 +1358,13 @@ npm run dev</pre>
                                 (<code class="ic">Route</code>) ទាំងអស់របស់វេបសាយ។</li>
                             <li><code class="ic">&lt;Route path="..." element={...} /&gt;</code><strong>៖</strong>
                                 កំណត់ផ្លូវ URL និងបង្ហាញ Component តាម Path នីមួយៗ។</li>
-                            <li><code class="ic">&lt;Link to="..."&gt;</code><strong>៖</strong> ប្រើជំនួសស្លាក <code
+                            <li><code class="ic">&lt;Link to="..."&gt;</code><strong>៖</strong> ប្រើជំនួស Tag <code
                                     class="ic">&lt;a&gt;</code> ដើម្បីចុចប្តូរទំព័រដោយគ្មានការ Reload។</li>
                             <li><code class="ic">&lt;NavLink to="..."&gt;</code><strong>៖</strong> ដូច <code
-                                    class="ic">Link</code> ដែរ តែអាចដឹងថា Menu មួយណាកំពុង Active។</li>
+                                    class="ic">Link</code> ដែរ តែមាន class <code class="ic">active</code> និង property
+                                <code class="ic">isActive</code> មកស្រាប់សម្រាប់ពិនិត្យថា Link កំពុង Active ឬអត់។</li>
                             <li><code class="ic">&lt;Outlet /&gt;</code><strong>៖</strong> បង្ហាញទំព័រកូន (Nested
-                                Routes) នៅខាងក្នុង Layout រួម។</li>
+                                Routes)។</li>
                             <li><code class="ic">&lt;Navigate to="..." /&gt;</code><strong>៖</strong>
                                 រុញអ្នកប្រើប្រាស់ទៅទំព័រផ្សេងដោយស្វ័យប្រវត្តិ (Redirect)។</li>
                         </ul>
